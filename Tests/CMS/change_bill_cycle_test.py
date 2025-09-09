@@ -17,7 +17,7 @@ from POM.Common.Raptr_Base_Page import RpBasePage
 from Utils.faker_util import FakeDataUtil
 
 
-@allure.title("Create Request Postpaid-Prepaid Migration.")
+@allure.title("Change Bill Cycle Request.")
 @allure.description_html("""
 Test Description:create request by Filtering request type as "service change",<br>
 request subtype as "service change requesTC" <br>
