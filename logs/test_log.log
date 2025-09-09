@@ -1,0 +1,47 @@
+
+
+2025-09-09 14:51:43,549 - INFO - Test session is starting.
+2025-09-09 14:51:43,566 - INFO - Session started.
+2025-09-09 14:51:43,647 - INFO - Session finished with exit status: 4
+2025-09-09 14:51:43,651 - INFO - Total tests run: 0
+2025-09-09 14:51:43,652 - INFO - Passed: 0
+2025-09-09 14:51:43,652 - INFO - Failed: 0
+2025-09-09 14:51:43,653 - INFO - Skipped: 0
+2025-09-09 14:51:43,653 - INFO - Terminal summary written.
+
+
+2025-09-09 14:51:50,237 - INFO - Test session is starting.
+2025-09-09 14:51:50,242 - INFO - Session started.
+2025-09-09 14:51:50,275 - INFO - Session finished with exit status: 4
+2025-09-09 14:51:50,287 - INFO - Total tests run: 0
+2025-09-09 14:51:50,288 - INFO - Passed: 0
+2025-09-09 14:51:50,288 - INFO - Failed: 0
+2025-09-09 14:51:50,292 - INFO - Skipped: 0
+2025-09-09 14:51:50,292 - INFO - Terminal summary written.
+
+
+2025-09-09 14:56:06,222 - INFO - Test session is starting.
+2025-09-09 14:56:06,229 - INFO - Session started.
+2025-09-09 14:56:07,285 - INFO - Setting up: test_customer_requests[0]
+2025-09-09 14:56:15,588 - INFO - Running: test_customer_requests[0]
+2025-09-09 14:56:29,878 - INFO - Fetching customer ID from database...
+2025-09-09 14:56:33,596 - INFO - CUSTOMER ID TESTING IS = 3254
+2025-09-09 14:56:36,285 - INFO - Search By: Customer ID
+2025-09-09 14:56:41,493 - INFO - Clicked on Search icon.
+2025-09-09 14:56:47,912 - INFO - Customer Details Found
+2025-09-09 14:56:49,744 - INFO - Customer Name: JoshuaNewton AmandaDean JoshuaChristian
+2025-09-09 14:56:52,315 - INFO - Request Type Service Requests
+2025-09-09 14:56:55,084 - INFO - Request Name: Change Bill Delivery Mode
+2025-09-09 14:57:02,315 - INFO - Selecting the Billing Account
+2025-09-09 14:57:02,549 - INFO - Clicked on the Billing Account ID
+2025-09-09 14:57:02,962 - INFO - Getting the Customer Billing Account From DB
+2025-09-09 14:57:08,787 - INFO - Got Bill Delivery Mode From DB. [{'DELIVERY_MODE': 1}]
+2025-09-09 14:57:08,788 - INFO - Change Mode = Soft Copy
+2025-09-09 14:57:10,495 - INFO - Proper Alert as Expected.
+2025-09-09 14:57:10,909 - INFO - Teardown: test_customer_requests[0]
+2025-09-09 14:57:14,903 - INFO - Session finished with exit status: 0
+2025-09-09 14:57:14,948 - INFO - Total tests run: 1
+2025-09-09 14:57:14,948 - INFO - Passed: 1
+2025-09-09 14:57:14,948 - INFO - Failed: 0
+2025-09-09 14:57:14,948 - INFO - Skipped: 0
+2025-09-09 14:57:14,948 - INFO - Terminal summary written.
