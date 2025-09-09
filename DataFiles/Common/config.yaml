@@ -1,0 +1,42 @@
+sit:  #DEV credentials
+    base_url: http://172.16.111.83/RaptrDXP/#/login
+    yopmail_url: https://yopmail.com/
+    ap_username: 9mobile@yopmail.com
+    ap_password: 123456
+    db_driver: "{ODBC Driver 17 for SQL Server}"
+    db_server: 172.16.111.83
+    db_username: 9mobilenew
+    db_password: 9M0b@pp@2025
+    db_created_by_user: Jennifer
+    db_tenant_id: 100
+    db_created_by: Radius
+    auto_db_driver: "{ODBC Driver 17 for SQL Server}"
+    auto_db_server: 172.16.110.236,1433\SQLEXPRESS
+    auto_db_username: sa
+    auto_db_password: auto123
+    auto_db_name: sit
+    schema:
+        oms: dxpoms
+        pcs: dxppcs
+        rms: dxpref
+        ums: dxpums
+        pms: dxppms
+        vms: dxpvms
+        cms: dxpoms
+
+uat:  #T&D Credentials
+    base_url: http://172.16.110.47/RaptrDXP/#/login
+    ap_username: dineshreddy.gudibandi@knotsolutions.com
+    ap_password: 123456
+    db_driver: "{ODBC Driver 17 for SQL Server}"
+    db_server: 172.28.75.15
+    db_username: tfiber_imp
+    db_password: Tfiberimp12#$
+    db_created_by_user: Jennifer
+    db_tenant_id: 117
+    db_created_by: pjennifer1616@gmail.com
+    auto_db_driver: "{ODBC Driver 17 for SQL Server}"
+    auto_db_server: 172.16.110.236,1433\SQLEXPRESS
+    auto_db_username: sa
+    auto_db_password: auto123
+    auto_db_name: sit
