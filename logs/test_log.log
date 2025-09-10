@@ -45,3 +45,1410 @@
 2025-09-09 14:57:14,948 - INFO - Failed: 0
 2025-09-09 14:57:14,948 - INFO - Skipped: 0
 2025-09-09 14:57:14,948 - INFO - Terminal summary written.
+
+
+2025-09-10 09:39:35,761 - INFO - Test session is starting.
+2025-09-10 09:39:35,767 - INFO - Session started.
+2025-09-10 09:39:36,913 - INFO - Setting up: test_customer_requests[None]
+2025-09-10 09:39:55,728 - INFO - Running: test_customer_requests[None]
+2025-09-10 09:39:55,746 - INFO - Fetching customer ID from database...
+2025-09-10 09:39:56,363 - INFO - CUSTOMER ID TESTING IS = 3256
+2025-09-10 09:39:56,364 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 09:39:56,364 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 09:39:56,466 - INFO - Executed Account Check Query : [{'CUSTOMER_ACCOUNT_ID': 2207, 'TENANT_ID': 100, 'PARTNER_ID': -1, 'CUSTOMER_ID': 3256, 'NODE_ID': -1, 'BILLING_ACCOUNT_ID': 1344, 'CUSTOMER_ACCOUNT_DATE': datetime.date(2025, 8, 31), 'CUSTOMER_ACCOUNT_NAME': 'MichaelLopez ChristineDavis JustinMeyers', 'CUSTOMER_ACCOUNT_TYPE': '12', 'TNT_ACCOUNT_ID': '2207', 'CUSTOMER_RELATIONSHIP': None, 'ID_TYPE': 'NIN', 'ID_TYPE_VALUE': '19z94681', 'DURATION': 0, 'DURATION_UNIT': -1, 'RENEWAL_TYPE': -1, 'SALES_CHANNEL': None, 'CHANNEL_CODE': None, 'CUSTOMER_CONFIRMED_DATE': datetime.date(2025, 8, 31), 'ACTIVATION_DATE': datetime.date(2025, 8, 31), 'DEACTIVATION_DATE': None, 'IS_EKYC_COLLECTED': 'Y', 'CUSTOMER_DECLARATION': 'Y', 'PREFERRED_COMM_CHANNEL': 'ALL', 'PREFERRED_LANGUAGE': '', 'AUTO_DEBIT': 'N', 'IS_CUG': 'N', 'PREVIOUS_OPERATOR': None, 'EFFECTIVE_FROM': datetime.datetime(2025, 8, 31, 10, 43, 41), 'EFFECTIVE_TO': datetime.datetime(9999, 12, 31, 23, 59, 59), 'ACCOUNT_END_DATE': None, 'STATUS': 13, 'EXTERNAL_ID_1': None, 'EXTERNAL_ID_2': None, 'EXTERNAL_ID_3': None, 'CREATED_BY': '996205998', 'CREATED_IPADDR': None, 'CREATED_ON': datetime.datetime(2025, 8, 31, 10, 43, 29), 'MODIFIED_ON': datetime.datetime(2025, 8, 31, 10, 43, 41), 'MODIFIED_BY': '996205998', 'MODIFIED_IPADDR': '100', 'MIG_ACCOUNT_ID': None}]
+2025-09-10 09:39:56,467 - INFO - Customer = [3256] is Having a Valid Postpaid Account.
+2025-09-10 09:40:14,462 - INFO - Search By: None
+2025-09-10 09:40:19,249 - ERROR - Exception: TypeError: can only concatenate str (not "NoneType") to str (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 105)
+2025-09-10 09:40:19,963 - ERROR - Exception in test_customer_requests[None]: can only concatenate str (not "NoneType") to str
+2025-09-10 09:40:19,964 - INFO - Teardown: test_customer_requests[None]
+2025-09-10 09:40:29,998 - INFO - Session finished with exit status: 1
+2025-09-10 09:40:30,217 - INFO - Total tests run: 1
+2025-09-10 09:40:30,217 - INFO - Passed: 0
+2025-09-10 09:40:30,218 - INFO - Failed: 1
+2025-09-10 09:40:30,218 - INFO - Skipped: 0
+2025-09-10 09:40:30,219 - INFO - Terminal summary written.
+
+
+2025-09-10 09:41:08,829 - INFO - Test session is starting.
+2025-09-10 09:41:08,836 - INFO - Session started.
+2025-09-10 09:41:09,364 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 09:41:15,163 - INFO - Running: test_customer_requests[0]
+2025-09-10 09:41:15,167 - INFO - Fetching customer ID from database...
+2025-09-10 09:41:15,337 - INFO - CUSTOMER ID TESTING IS = 3256
+2025-09-10 09:41:15,337 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 09:41:15,337 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 09:41:15,458 - INFO - Executed Account Check Query : [{'CUSTOMER_ACCOUNT_ID': 2207, 'TENANT_ID': 100, 'PARTNER_ID': -1, 'CUSTOMER_ID': 3256, 'NODE_ID': -1, 'BILLING_ACCOUNT_ID': 1344, 'CUSTOMER_ACCOUNT_DATE': datetime.date(2025, 8, 31), 'CUSTOMER_ACCOUNT_NAME': 'MichaelLopez ChristineDavis JustinMeyers', 'CUSTOMER_ACCOUNT_TYPE': '12', 'TNT_ACCOUNT_ID': '2207', 'CUSTOMER_RELATIONSHIP': None, 'ID_TYPE': 'NIN', 'ID_TYPE_VALUE': '19z94681', 'DURATION': 0, 'DURATION_UNIT': -1, 'RENEWAL_TYPE': -1, 'SALES_CHANNEL': None, 'CHANNEL_CODE': None, 'CUSTOMER_CONFIRMED_DATE': datetime.date(2025, 8, 31), 'ACTIVATION_DATE': datetime.date(2025, 8, 31), 'DEACTIVATION_DATE': None, 'IS_EKYC_COLLECTED': 'Y', 'CUSTOMER_DECLARATION': 'Y', 'PREFERRED_COMM_CHANNEL': 'ALL', 'PREFERRED_LANGUAGE': '', 'AUTO_DEBIT': 'N', 'IS_CUG': 'N', 'PREVIOUS_OPERATOR': None, 'EFFECTIVE_FROM': datetime.datetime(2025, 8, 31, 10, 43, 41), 'EFFECTIVE_TO': datetime.datetime(9999, 12, 31, 23, 59, 59), 'ACCOUNT_END_DATE': None, 'STATUS': 13, 'EXTERNAL_ID_1': None, 'EXTERNAL_ID_2': None, 'EXTERNAL_ID_3': None, 'CREATED_BY': '996205998', 'CREATED_IPADDR': None, 'CREATED_ON': datetime.datetime(2025, 8, 31, 10, 43, 29), 'MODIFIED_ON': datetime.datetime(2025, 8, 31, 10, 43, 41), 'MODIFIED_BY': '996205998', 'MODIFIED_IPADDR': '100', 'MIG_ACCOUNT_ID': None}]
+2025-09-10 09:41:15,459 - INFO - Customer = [3256] is Having a Valid Postpaid Account.
+2025-09-10 09:41:33,553 - ERROR - Exception: ElementClickInterceptedException: Message: element click intercepted: Element <button _ngcontent-vin-c159="" mat-menu-item="" class="mat-focus-indicator mat-menu-item ng-tns-c132-6 ng-star-inserted" tabindex="0" role="menuitem" aria-disabled="false" style="">...</button> is not clickable at point (460, 115). Other element would receive the click: <div id="cdk-overlay-0" class="cdk-overlay-pane" style="position: static;">...</div>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6e4c3fc95+79861]
+	GetHandleVerifier [0x0x7ff6e4c3fcf0+79952]
+	(No symbol) [0x0x7ff6e49bcada]
+	(No symbol) [0x0x7ff6e4a1c5d9]
+	(No symbol) [0x0x7ff6e4a19f5e]
+	(No symbol) [0x0x7ff6e4a16eb1]
+	(No symbol) [0x0x7ff6e4a15da0]
+	(No symbol) [0x0x7ff6e4a07338]
+	(No symbol) [0x0x7ff6e4a3cada]
+	(No symbol) [0x0x7ff6e4a06bc6]
+	(No symbol) [0x0x7ff6e4a3ccf0]
+	(No symbol) [0x0x7ff6e4a64f8b]
+	(No symbol) [0x0x7ff6e4a3c8b3]
+	(No symbol) [0x0x7ff6e4a05272]
+	(No symbol) [0x0x7ff6e4a06043]
+	GetHandleVerifier [0x0x7ff6e4efb9cd+2946349]
+	GetHandleVerifier [0x0x7ff6e4ef5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6e4f159d7+3052855]
+	GetHandleVerifier [0x0x7ff6e4c5aa7e+189918]
+	GetHandleVerifier [0x0x7ff6e4c62a1f+222591]
+	GetHandleVerifier [0x0x7ff6e4c48ab4+116244]
+	GetHandleVerifier [0x0x7ff6e4c48c69+116681]
+	GetHandleVerifier [0x0x7ff6e4c2f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 100)
+2025-09-10 09:41:34,966 - ERROR - Exception in test_customer_requests[0]: Message: element click intercepted: Element <button _ngcontent-vin-c159="" mat-menu-item="" class="mat-focus-indicator mat-menu-item ng-tns-c132-6 ng-star-inserted" tabindex="0" role="menuitem" aria-disabled="false" style="">...</button> is not clickable at point (460, 115). Other element would receive the click: <div id="cdk-overlay-0" class="cdk-overlay-pane" style="position: static;">...</div>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6e4c3fc95+79861]
+	GetHandleVerifier [0x0x7ff6e4c3fcf0+79952]
+	(No symbol) [0x0x7ff6e49bcada]
+	(No symbol) [0x0x7ff6e4a1c5d9]
+	(No symbol) [0x0x7ff6e4a19f5e]
+	(No symbol) [0x0x7ff6e4a16eb1]
+	(No symbol) [0x0x7ff6e4a15da0]
+	(No symbol) [0x0x7ff6e4a07338]
+	(No symbol) [0x0x7ff6e4a3cada]
+	(No symbol) [0x0x7ff6e4a06bc6]
+	(No symbol) [0x0x7ff6e4a3ccf0]
+	(No symbol) [0x0x7ff6e4a64f8b]
+	(No symbol) [0x0x7ff6e4a3c8b3]
+	(No symbol) [0x0x7ff6e4a05272]
+	(No symbol) [0x0x7ff6e4a06043]
+	GetHandleVerifier [0x0x7ff6e4efb9cd+2946349]
+	GetHandleVerifier [0x0x7ff6e4ef5c4a+2922410]
+	GetHandleVerifier [0x0x7ff6e4f159d7+3052855]
+	GetHandleVerifier [0x0x7ff6e4c5aa7e+189918]
+	GetHandleVerifier [0x0x7ff6e4c62a1f+222591]
+	GetHandleVerifier [0x0x7ff6e4c48ab4+116244]
+	GetHandleVerifier [0x0x7ff6e4c48c69+116681]
+	GetHandleVerifier [0x0x7ff6e4c2f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 09:41:34,968 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 09:41:37,865 - INFO - Session finished with exit status: 1
+2025-09-10 09:41:38,089 - INFO - Total tests run: 1
+2025-09-10 09:41:38,090 - INFO - Passed: 0
+2025-09-10 09:41:38,092 - INFO - Failed: 1
+2025-09-10 09:41:38,092 - INFO - Skipped: 0
+2025-09-10 09:41:38,092 - INFO - Terminal summary written.
+
+
+2025-09-10 09:44:37,482 - INFO - Test session is starting.
+2025-09-10 09:44:37,487 - INFO - Session started.
+2025-09-10 09:44:37,978 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 09:44:42,432 - INFO - Running: test_customer_requests[0]
+2025-09-10 09:44:42,439 - INFO - Fetching customer ID from database...
+2025-09-10 09:44:42,882 - INFO - CUSTOMER ID TESTING IS = 3256
+2025-09-10 09:44:42,883 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 09:44:42,883 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 09:44:43,074 - INFO - Customer = [3256] is Having a Valid Postpaid Account.
+2025-09-10 09:44:59,728 - INFO - Search By: Customer ID
+2025-09-10 09:45:04,821 - INFO - Clicked on Search icon.
+2025-09-10 09:45:10,950 - INFO - Customer Details Found
+2025-09-10 09:45:11,249 - INFO - Customer Name: MichaelLopez ChristineDavis JustinMeyers
+2025-09-10 09:45:13,449 - INFO - Request Type Service Requests
+2025-09-10 09:45:16,231 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 09:45:33,753 - INFO - Checking the account Radio Button.
+2025-09-10 09:45:34,053 - INFO - Clicked on Account Radio Button
+2025-09-10 09:45:36,082 - ERROR - Exception: AttributeError: 'PrepaidToPostpaid' object has no attribute 'find_element' (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 161)
+2025-09-10 09:45:36,594 - ERROR - Exception in test_customer_requests[0]: 'PrepaidToPostpaid' object has no attribute 'find_element'
+2025-09-10 09:45:36,595 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 09:45:39,734 - INFO - Session finished with exit status: 1
+2025-09-10 09:45:39,914 - INFO - Total tests run: 1
+2025-09-10 09:45:39,915 - INFO - Passed: 0
+2025-09-10 09:45:39,915 - INFO - Failed: 1
+2025-09-10 09:45:39,916 - INFO - Skipped: 0
+2025-09-10 09:45:39,916 - INFO - Terminal summary written.
+
+
+2025-09-10 09:49:24,457 - INFO - Test session is starting.
+2025-09-10 09:49:24,464 - INFO - Session started.
+2025-09-10 09:49:25,084 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 09:49:44,686 - INFO - Running: test_customer_requests[0]
+2025-09-10 09:49:44,694 - INFO - Fetching customer ID from database...
+2025-09-10 09:49:46,117 - INFO - CUSTOMER ID TESTING IS = 3256
+2025-09-10 09:49:46,118 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 09:49:46,118 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 09:49:46,246 - INFO - Customer = [3256] is Having a Valid Postpaid Account.
+2025-09-10 09:50:03,367 - INFO - Search By: Customer ID
+2025-09-10 09:50:13,682 - INFO - Clicked on Search icon.
+2025-09-10 09:50:18,742 - INFO - Customer Details Found
+2025-09-10 09:50:19,024 - INFO - Customer Name: MichaelLopez ChristineDavis JustinMeyers
+2025-09-10 09:50:21,218 - INFO - Request Type Service Requests
+2025-09-10 09:50:23,988 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 09:50:42,379 - INFO - Checking the account Radio Button.
+2025-09-10 09:50:42,911 - INFO - Clicked on Account Radio Button
+2025-09-10 09:50:46,092 - ERROR - Exception: ElementClickInterceptedException: Message: element click intercepted: Element <input type="checkbox" class="mat-checkbox-input cdk-visually-hidden" id="checkStandalonePlanNumber4-input" tabindex="0" name="checkStandalonePlanNumber4" aria-checked="false"> is not clickable at point (1070, 574). Other element would receive the click: <mat-checkbox _ngcontent-jtx-c412="" class="mat-checkbox mat-accent ng-untouched ng-pristine ng-valid" id="checkStandalonePlanNumber4">...</mat-checkbox>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff76160fc95+79861]
+	GetHandleVerifier [0x0x7ff76160fcf0+79952]
+	(No symbol) [0x0x7ff76138cada]
+	(No symbol) [0x0x7ff7613ec5d9]
+	(No symbol) [0x0x7ff7613e9f5e]
+	(No symbol) [0x0x7ff7613e6eb1]
+	(No symbol) [0x0x7ff7613e5da0]
+	(No symbol) [0x0x7ff7613d7338]
+	(No symbol) [0x0x7ff76140cada]
+	(No symbol) [0x0x7ff7613d6bc6]
+	(No symbol) [0x0x7ff76140ccf0]
+	(No symbol) [0x0x7ff761434f8b]
+	(No symbol) [0x0x7ff76140c8b3]
+	(No symbol) [0x0x7ff7613d5272]
+	(No symbol) [0x0x7ff7613d6043]
+	GetHandleVerifier [0x0x7ff7618cb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7618c5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7618e59d7+3052855]
+	GetHandleVerifier [0x0x7ff76162aa7e+189918]
+	GetHandleVerifier [0x0x7ff761632a1f+222591]
+	GetHandleVerifier [0x0x7ff761618ab4+116244]
+	GetHandleVerifier [0x0x7ff761618c69+116681]
+	GetHandleVerifier [0x0x7ff7615ff048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 161)
+2025-09-10 09:50:46,756 - ERROR - Exception in test_customer_requests[0]: Message: element click intercepted: Element <input type="checkbox" class="mat-checkbox-input cdk-visually-hidden" id="checkStandalonePlanNumber4-input" tabindex="0" name="checkStandalonePlanNumber4" aria-checked="false"> is not clickable at point (1070, 574). Other element would receive the click: <mat-checkbox _ngcontent-jtx-c412="" class="mat-checkbox mat-accent ng-untouched ng-pristine ng-valid" id="checkStandalonePlanNumber4">...</mat-checkbox>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff76160fc95+79861]
+	GetHandleVerifier [0x0x7ff76160fcf0+79952]
+	(No symbol) [0x0x7ff76138cada]
+	(No symbol) [0x0x7ff7613ec5d9]
+	(No symbol) [0x0x7ff7613e9f5e]
+	(No symbol) [0x0x7ff7613e6eb1]
+	(No symbol) [0x0x7ff7613e5da0]
+	(No symbol) [0x0x7ff7613d7338]
+	(No symbol) [0x0x7ff76140cada]
+	(No symbol) [0x0x7ff7613d6bc6]
+	(No symbol) [0x0x7ff76140ccf0]
+	(No symbol) [0x0x7ff761434f8b]
+	(No symbol) [0x0x7ff76140c8b3]
+	(No symbol) [0x0x7ff7613d5272]
+	(No symbol) [0x0x7ff7613d6043]
+	GetHandleVerifier [0x0x7ff7618cb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7618c5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7618e59d7+3052855]
+	GetHandleVerifier [0x0x7ff76162aa7e+189918]
+	GetHandleVerifier [0x0x7ff761632a1f+222591]
+	GetHandleVerifier [0x0x7ff761618ab4+116244]
+	GetHandleVerifier [0x0x7ff761618c69+116681]
+	GetHandleVerifier [0x0x7ff7615ff048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 09:50:46,759 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 09:50:49,555 - INFO - Session finished with exit status: 1
+2025-09-10 09:50:49,796 - INFO - Total tests run: 1
+2025-09-10 09:50:49,797 - INFO - Passed: 0
+2025-09-10 09:50:49,797 - INFO - Failed: 1
+2025-09-10 09:50:49,797 - INFO - Skipped: 0
+2025-09-10 09:50:49,797 - INFO - Terminal summary written.
+
+
+2025-09-10 09:54:01,078 - INFO - Test session is starting.
+2025-09-10 09:54:01,085 - INFO - Session started.
+2025-09-10 09:54:01,604 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 09:54:26,365 - INFO - Running: test_customer_requests[0]
+2025-09-10 09:54:26,374 - INFO - Fetching customer ID from database...
+2025-09-10 09:54:27,553 - INFO - CUSTOMER ID TESTING IS = 3256
+2025-09-10 09:54:27,554 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 09:54:27,554 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 09:54:27,705 - INFO - Customer = [3256] is Having a Valid Postpaid Account.
+2025-09-10 09:54:56,050 - INFO - Search By: Customer ID
+2025-09-10 09:55:01,052 - INFO - Clicked on Search icon.
+2025-09-10 09:55:06,109 - INFO - Customer Details Found
+2025-09-10 09:55:06,393 - INFO - Customer Name: MichaelLopez ChristineDavis JustinMeyers
+2025-09-10 09:55:08,589 - INFO - Request Type Service Requests
+2025-09-10 09:55:11,336 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 09:55:20,106 - INFO - Checking the account Radio Button.
+2025-09-10 09:55:20,383 - INFO - Clicked on Account Radio Button
+2025-09-10 09:55:24,200 - ERROR - Exception: ElementClickInterceptedException: Message: element click intercepted: Element <input type="checkbox" class="mat-checkbox-input cdk-visually-hidden" id="checkStandalonePlanNumber4-input" tabindex="0" name="checkStandalonePlanNumber4" aria-checked="false"> is not clickable at point (1070, 32). Other element would receive the click: <mat-toolbar _ngcontent-vyt-c159="" fxlayout="row" class="mat-toolbar custheader ng-tns-c159-0 mat-toolbar-single-row" style="height: 50px; margin-left: 0px; width: 100%; flex-direction: row; box-sizing: border-box; display: flex;">...</mat-toolbar>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7a771fc95+79861]
+	GetHandleVerifier [0x0x7ff7a771fcf0+79952]
+	(No symbol) [0x0x7ff7a749cada]
+	(No symbol) [0x0x7ff7a74fc5d9]
+	(No symbol) [0x0x7ff7a74f9f5e]
+	(No symbol) [0x0x7ff7a74f6eb1]
+	(No symbol) [0x0x7ff7a74f5da0]
+	(No symbol) [0x0x7ff7a74e7338]
+	(No symbol) [0x0x7ff7a751cada]
+	(No symbol) [0x0x7ff7a74e6bc6]
+	(No symbol) [0x0x7ff7a751ccf0]
+	(No symbol) [0x0x7ff7a7544f8b]
+	(No symbol) [0x0x7ff7a751c8b3]
+	(No symbol) [0x0x7ff7a74e5272]
+	(No symbol) [0x0x7ff7a74e6043]
+	GetHandleVerifier [0x0x7ff7a79db9cd+2946349]
+	GetHandleVerifier [0x0x7ff7a79d5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7a79f59d7+3052855]
+	GetHandleVerifier [0x0x7ff7a773aa7e+189918]
+	GetHandleVerifier [0x0x7ff7a7742a1f+222591]
+	GetHandleVerifier [0x0x7ff7a7728ab4+116244]
+	GetHandleVerifier [0x0x7ff7a7728c69+116681]
+	GetHandleVerifier [0x0x7ff7a770f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 161)
+2025-09-10 09:55:24,826 - ERROR - Exception in test_customer_requests[0]: Message: element click intercepted: Element <input type="checkbox" class="mat-checkbox-input cdk-visually-hidden" id="checkStandalonePlanNumber4-input" tabindex="0" name="checkStandalonePlanNumber4" aria-checked="false"> is not clickable at point (1070, 32). Other element would receive the click: <mat-toolbar _ngcontent-vyt-c159="" fxlayout="row" class="mat-toolbar custheader ng-tns-c159-0 mat-toolbar-single-row" style="height: 50px; margin-left: 0px; width: 100%; flex-direction: row; box-sizing: border-box; display: flex;">...</mat-toolbar>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7a771fc95+79861]
+	GetHandleVerifier [0x0x7ff7a771fcf0+79952]
+	(No symbol) [0x0x7ff7a749cada]
+	(No symbol) [0x0x7ff7a74fc5d9]
+	(No symbol) [0x0x7ff7a74f9f5e]
+	(No symbol) [0x0x7ff7a74f6eb1]
+	(No symbol) [0x0x7ff7a74f5da0]
+	(No symbol) [0x0x7ff7a74e7338]
+	(No symbol) [0x0x7ff7a751cada]
+	(No symbol) [0x0x7ff7a74e6bc6]
+	(No symbol) [0x0x7ff7a751ccf0]
+	(No symbol) [0x0x7ff7a7544f8b]
+	(No symbol) [0x0x7ff7a751c8b3]
+	(No symbol) [0x0x7ff7a74e5272]
+	(No symbol) [0x0x7ff7a74e6043]
+	GetHandleVerifier [0x0x7ff7a79db9cd+2946349]
+	GetHandleVerifier [0x0x7ff7a79d5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7a79f59d7+3052855]
+	GetHandleVerifier [0x0x7ff7a773aa7e+189918]
+	GetHandleVerifier [0x0x7ff7a7742a1f+222591]
+	GetHandleVerifier [0x0x7ff7a7728ab4+116244]
+	GetHandleVerifier [0x0x7ff7a7728c69+116681]
+	GetHandleVerifier [0x0x7ff7a770f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 09:55:24,828 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 09:55:27,506 - INFO - Session finished with exit status: 1
+2025-09-10 09:55:27,627 - INFO - Total tests run: 1
+2025-09-10 09:55:27,628 - INFO - Passed: 0
+2025-09-10 09:55:27,628 - INFO - Failed: 1
+2025-09-10 09:55:27,628 - INFO - Skipped: 0
+2025-09-10 09:55:27,628 - INFO - Terminal summary written.
+
+
+2025-09-10 09:57:57,110 - INFO - Test session is starting.
+2025-09-10 09:57:57,115 - INFO - Session started.
+2025-09-10 09:57:57,642 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 09:58:37,624 - INFO - Running: test_customer_requests[0]
+2025-09-10 09:58:37,635 - INFO - Fetching customer ID from database...
+2025-09-10 09:58:37,895 - INFO - CUSTOMER ID TESTING IS = 3256
+2025-09-10 09:58:37,895 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 09:58:37,896 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 09:58:37,986 - INFO - Customer = [3256] is Having a Valid Postpaid Account.
+2025-09-10 09:59:01,233 - INFO - Search By: Customer ID
+2025-09-10 09:59:06,786 - INFO - Clicked on Search icon.
+2025-09-10 09:59:12,447 - INFO - Customer Details Found
+2025-09-10 09:59:13,316 - INFO - Customer Name: MichaelLopez ChristineDavis JustinMeyers
+2025-09-10 09:59:15,921 - INFO - Request Type Service Requests
+2025-09-10 09:59:18,743 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 09:59:28,120 - INFO - Checking the account Radio Button.
+2025-09-10 09:59:28,405 - INFO - Clicked on Account Radio Button
+2025-09-10 09:59:35,665 - ERROR - Exception: ElementClickInterceptedException: Message: element click intercepted: Element <input type="checkbox" class="mat-checkbox-input cdk-visually-hidden" id="checkStandalonePlanNumber4-input" tabindex="0" name="checkStandalonePlanNumber4" aria-checked="false"> is not clickable at point (1070, 574). Other element would receive the click: <mat-checkbox _ngcontent-jre-c412="" class="mat-checkbox mat-accent ng-untouched ng-pristine ng-valid" id="checkStandalonePlanNumber4">...</mat-checkbox>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff768d8fc95+79861]
+	GetHandleVerifier [0x0x7ff768d8fcf0+79952]
+	(No symbol) [0x0x7ff768b0cada]
+	(No symbol) [0x0x7ff768b6c5d9]
+	(No symbol) [0x0x7ff768b69f5e]
+	(No symbol) [0x0x7ff768b66eb1]
+	(No symbol) [0x0x7ff768b65da0]
+	(No symbol) [0x0x7ff768b57338]
+	(No symbol) [0x0x7ff768b8cada]
+	(No symbol) [0x0x7ff768b56bc6]
+	(No symbol) [0x0x7ff768b8ccf0]
+	(No symbol) [0x0x7ff768bb4f8b]
+	(No symbol) [0x0x7ff768b8c8b3]
+	(No symbol) [0x0x7ff768b55272]
+	(No symbol) [0x0x7ff768b56043]
+	GetHandleVerifier [0x0x7ff76904b9cd+2946349]
+	GetHandleVerifier [0x0x7ff769045c4a+2922410]
+	GetHandleVerifier [0x0x7ff7690659d7+3052855]
+	GetHandleVerifier [0x0x7ff768daaa7e+189918]
+	GetHandleVerifier [0x0x7ff768db2a1f+222591]
+	GetHandleVerifier [0x0x7ff768d98ab4+116244]
+	GetHandleVerifier [0x0x7ff768d98c69+116681]
+	GetHandleVerifier [0x0x7ff768d7f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 161)
+2025-09-10 09:59:49,718 - ERROR - Exception in test_customer_requests[0]: Message: element click intercepted: Element <input type="checkbox" class="mat-checkbox-input cdk-visually-hidden" id="checkStandalonePlanNumber4-input" tabindex="0" name="checkStandalonePlanNumber4" aria-checked="false"> is not clickable at point (1070, 574). Other element would receive the click: <mat-checkbox _ngcontent-jre-c412="" class="mat-checkbox mat-accent ng-untouched ng-pristine ng-valid" id="checkStandalonePlanNumber4">...</mat-checkbox>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff768d8fc95+79861]
+	GetHandleVerifier [0x0x7ff768d8fcf0+79952]
+	(No symbol) [0x0x7ff768b0cada]
+	(No symbol) [0x0x7ff768b6c5d9]
+	(No symbol) [0x0x7ff768b69f5e]
+	(No symbol) [0x0x7ff768b66eb1]
+	(No symbol) [0x0x7ff768b65da0]
+	(No symbol) [0x0x7ff768b57338]
+	(No symbol) [0x0x7ff768b8cada]
+	(No symbol) [0x0x7ff768b56bc6]
+	(No symbol) [0x0x7ff768b8ccf0]
+	(No symbol) [0x0x7ff768bb4f8b]
+	(No symbol) [0x0x7ff768b8c8b3]
+	(No symbol) [0x0x7ff768b55272]
+	(No symbol) [0x0x7ff768b56043]
+	GetHandleVerifier [0x0x7ff76904b9cd+2946349]
+	GetHandleVerifier [0x0x7ff769045c4a+2922410]
+	GetHandleVerifier [0x0x7ff7690659d7+3052855]
+	GetHandleVerifier [0x0x7ff768daaa7e+189918]
+	GetHandleVerifier [0x0x7ff768db2a1f+222591]
+	GetHandleVerifier [0x0x7ff768d98ab4+116244]
+	GetHandleVerifier [0x0x7ff768d98c69+116681]
+	GetHandleVerifier [0x0x7ff768d7f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 09:59:49,720 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 09:59:52,610 - INFO - Session finished with exit status: 1
+2025-09-10 09:59:52,791 - INFO - Total tests run: 1
+2025-09-10 09:59:52,792 - INFO - Passed: 0
+2025-09-10 09:59:52,792 - INFO - Failed: 1
+2025-09-10 09:59:52,792 - INFO - Skipped: 0
+2025-09-10 09:59:52,792 - INFO - Terminal summary written.
+
+
+2025-09-10 10:05:56,694 - INFO - Test session is starting.
+2025-09-10 10:05:56,699 - INFO - Session started.
+2025-09-10 10:05:57,173 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 10:06:02,148 - INFO - Running: test_customer_requests[0]
+2025-09-10 10:06:02,152 - INFO - Fetching customer ID from database...
+2025-09-10 10:06:02,335 - INFO - CUSTOMER ID TESTING IS = 3256
+2025-09-10 10:06:02,336 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 10:06:02,337 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 10:06:02,469 - INFO - Customer = [3256] is Having a Valid Postpaid Account.
+2025-09-10 10:06:22,132 - INFO - Search By: Customer ID
+2025-09-10 10:06:27,125 - INFO - Clicked on Search icon.
+2025-09-10 10:06:32,207 - INFO - Customer Details Found
+2025-09-10 10:06:32,490 - INFO - Customer Name: MichaelLopez ChristineDavis JustinMeyers
+2025-09-10 10:06:34,714 - INFO - Request Type Service Requests
+2025-09-10 10:06:37,466 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 10:06:57,136 - INFO - Checking the account Radio Button.
+2025-09-10 10:06:57,426 - INFO - Clicked on Account Radio Button
+2025-09-10 10:07:08,014 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 10:07:10,763 - INFO - Session finished with exit status: 0
+2025-09-10 10:07:10,768 - INFO - Total tests run: 1
+2025-09-10 10:07:10,768 - INFO - Passed: 1
+2025-09-10 10:07:10,768 - INFO - Failed: 0
+2025-09-10 10:07:10,768 - INFO - Skipped: 0
+2025-09-10 10:07:10,768 - INFO - Terminal summary written.
+
+
+2025-09-10 10:10:31,719 - INFO - Test session is starting.
+2025-09-10 10:10:31,726 - INFO - Session started.
+2025-09-10 10:10:32,226 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 10:10:55,011 - INFO - Running: test_customer_requests[0]
+2025-09-10 10:10:55,019 - INFO - Fetching customer ID from database...
+2025-09-10 10:10:55,218 - INFO - CUSTOMER ID TESTING IS = 3256
+2025-09-10 10:10:55,219 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 10:10:55,219 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 10:10:55,403 - INFO - Customer = [3256] is Having a Valid Postpaid Account.
+2025-09-10 10:11:36,201 - INFO - Search By: Customer ID
+2025-09-10 10:11:41,221 - INFO - Clicked on Search icon.
+2025-09-10 10:11:46,284 - INFO - Customer Details Found
+2025-09-10 10:11:46,557 - INFO - Customer Name: MichaelLopez ChristineDavis JustinMeyers
+2025-09-10 10:11:48,760 - INFO - Request Type Service Requests
+2025-09-10 10:11:51,505 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 10:12:00,979 - INFO - Checking the account Radio Button.
+2025-09-10 10:12:01,257 - INFO - Clicked on Account Radio Button
+2025-09-10 10:12:09,095 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 10:12:11,713 - INFO - Session finished with exit status: 0
+2025-09-10 10:12:11,717 - INFO - Total tests run: 1
+2025-09-10 10:12:11,718 - INFO - Passed: 1
+2025-09-10 10:12:11,718 - INFO - Failed: 0
+2025-09-10 10:12:11,718 - INFO - Skipped: 0
+2025-09-10 10:12:11,718 - INFO - Terminal summary written.
+
+
+2025-09-10 11:45:57,474 - INFO - Test session is starting.
+2025-09-10 11:45:57,480 - INFO - Session started.
+2025-09-10 11:45:58,126 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 11:46:04,150 - INFO - Running: test_customer_requests[0]
+2025-09-10 11:46:04,175 - INFO - Fetching customer ID from database...
+2025-09-10 11:46:04,637 - INFO - CUSTOMER ID TESTING IS = 3260
+2025-09-10 11:46:04,638 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 11:46:04,640 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 11:46:04,987 - INFO - Customer = [3260] is Having a Valid Postpaid Account.
+2025-09-10 11:46:35,049 - INFO - Search By: Customer ID
+2025-09-10 11:46:41,059 - INFO - Clicked on Search icon.
+2025-09-10 11:46:46,198 - INFO - Customer Details Found
+2025-09-10 11:46:46,752 - INFO - Customer Name: BarryNguyen RodneyOrtiz ReginaldConway
+2025-09-10 11:46:49,115 - INFO - Request Type Service Requests
+2025-09-10 11:46:52,036 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 11:47:00,921 - INFO - Checking the account Radio Button.
+2025-09-10 11:47:01,206 - INFO - Clicked on Account Radio Button
+2025-09-10 11:47:24,283 - ERROR - TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7387dfc95+79861]
+	GetHandleVerifier [0x0x7ff7387dfcf0+79952]
+	(No symbol) [0x0x7ff73855cada]
+	(No symbol) [0x0x7ff7385b4457]
+	(No symbol) [0x0x7ff7385b471c]
+	(No symbol) [0x0x7ff738608217]
+	(No symbol) [0x0x7ff7385dcb1f]
+	(No symbol) [0x0x7ff738604f8b]
+	(No symbol) [0x0x7ff7385dc8b3]
+	(No symbol) [0x0x7ff7385a5272]
+	(No symbol) [0x0x7ff7385a6043]
+	GetHandleVerifier [0x0x7ff738a9b9cd+2946349]
+	GetHandleVerifier [0x0x7ff738a95c4a+2922410]
+	GetHandleVerifier [0x0x7ff738ab59d7+3052855]
+	GetHandleVerifier [0x0x7ff7387faa7e+189918]
+	GetHandleVerifier [0x0x7ff738802a1f+222591]
+	GetHandleVerifier [0x0x7ff7387e8ab4+116244]
+	GetHandleVerifier [0x0x7ff7387e8c69+116681]
+	GetHandleVerifier [0x0x7ff7387cf048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 166)
+2025-09-10 11:47:28,024 - ERROR - Exception in test_customer_requests[0]: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7387dfc95+79861]
+	GetHandleVerifier [0x0x7ff7387dfcf0+79952]
+	(No symbol) [0x0x7ff73855cada]
+	(No symbol) [0x0x7ff7385b4457]
+	(No symbol) [0x0x7ff7385b471c]
+	(No symbol) [0x0x7ff738608217]
+	(No symbol) [0x0x7ff7385dcb1f]
+	(No symbol) [0x0x7ff738604f8b]
+	(No symbol) [0x0x7ff7385dc8b3]
+	(No symbol) [0x0x7ff7385a5272]
+	(No symbol) [0x0x7ff7385a6043]
+	GetHandleVerifier [0x0x7ff738a9b9cd+2946349]
+	GetHandleVerifier [0x0x7ff738a95c4a+2922410]
+	GetHandleVerifier [0x0x7ff738ab59d7+3052855]
+	GetHandleVerifier [0x0x7ff7387faa7e+189918]
+	GetHandleVerifier [0x0x7ff738802a1f+222591]
+	GetHandleVerifier [0x0x7ff7387e8ab4+116244]
+	GetHandleVerifier [0x0x7ff7387e8c69+116681]
+	GetHandleVerifier [0x0x7ff7387cf048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 11:47:28,034 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 11:48:05,918 - INFO - Session finished with exit status: 1
+2025-09-10 11:48:06,118 - INFO - Total tests run: 1
+2025-09-10 11:48:06,118 - INFO - Passed: 0
+2025-09-10 11:48:06,118 - INFO - Failed: 1
+2025-09-10 11:48:06,119 - INFO - Skipped: 0
+2025-09-10 11:48:06,119 - INFO - Terminal summary written.
+
+
+2025-09-10 11:58:05,352 - INFO - Test session is starting.
+2025-09-10 11:58:05,358 - INFO - Session started.
+2025-09-10 11:58:06,454 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 11:58:12,846 - INFO - Running: test_customer_requests[0]
+2025-09-10 11:58:12,866 - INFO - Fetching customer ID from database...
+2025-09-10 11:58:15,246 - INFO - CUSTOMER ID TESTING IS = 3260
+2025-09-10 11:58:15,311 - ERROR - Exception: NameError: name 'prepaid_plan_name' is not defined (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 78)
+2025-09-10 11:58:23,120 - ERROR - Exception in test_customer_requests[0]: name 'prepaid_plan_name' is not defined
+2025-09-10 11:58:23,122 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 11:58:27,612 - INFO - Session finished with exit status: 1
+2025-09-10 11:58:27,857 - INFO - Total tests run: 1
+2025-09-10 11:58:27,858 - INFO - Passed: 0
+2025-09-10 11:58:27,865 - INFO - Failed: 1
+2025-09-10 11:58:27,867 - INFO - Skipped: 0
+2025-09-10 11:58:27,868 - INFO - Terminal summary written.
+
+
+2025-09-10 11:59:07,272 - INFO - Test session is starting.
+2025-09-10 11:59:07,280 - INFO - Session started.
+2025-09-10 11:59:07,782 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 11:59:13,571 - INFO - Running: test_customer_requests[0]
+2025-09-10 11:59:13,581 - INFO - Fetching customer ID from database...
+2025-09-10 11:59:13,868 - INFO - CUSTOMER ID TESTING IS = 3260
+2025-09-10 11:59:13,869 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 11:59:13,870 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 11:59:14,043 - INFO - Customer = [3260] is Having a Valid Postpaid Account.
+2025-09-10 11:59:37,659 - INFO - Search By: Customer ID
+2025-09-10 11:59:43,005 - INFO - Clicked on Search icon.
+2025-09-10 11:59:48,066 - INFO - Customer Details Found
+2025-09-10 11:59:48,338 - INFO - Customer Name: BarryNguyen RodneyOrtiz ReginaldConway
+2025-09-10 11:59:50,539 - INFO - Request Type Service Requests
+2025-09-10 11:59:53,304 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 12:00:02,120 - INFO - Checking the account Radio Button.
+2025-09-10 12:00:02,413 - INFO - Clicked on Account Radio Button
+2025-09-10 12:00:25,549 - ERROR - TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75df2fc95+79861]
+	GetHandleVerifier [0x0x7ff75df2fcf0+79952]
+	(No symbol) [0x0x7ff75dcacada]
+	(No symbol) [0x0x7ff75dd04457]
+	(No symbol) [0x0x7ff75dd0471c]
+	(No symbol) [0x0x7ff75dd58217]
+	(No symbol) [0x0x7ff75dd2cb1f]
+	(No symbol) [0x0x7ff75dd54f8b]
+	(No symbol) [0x0x7ff75dd2c8b3]
+	(No symbol) [0x0x7ff75dcf5272]
+	(No symbol) [0x0x7ff75dcf6043]
+	GetHandleVerifier [0x0x7ff75e1eb9cd+2946349]
+	GetHandleVerifier [0x0x7ff75e1e5c4a+2922410]
+	GetHandleVerifier [0x0x7ff75e2059d7+3052855]
+	GetHandleVerifier [0x0x7ff75df4aa7e+189918]
+	GetHandleVerifier [0x0x7ff75df52a1f+222591]
+	GetHandleVerifier [0x0x7ff75df38ab4+116244]
+	GetHandleVerifier [0x0x7ff75df38c69+116681]
+	GetHandleVerifier [0x0x7ff75df1f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 173)
+2025-09-10 12:00:26,236 - ERROR - Exception in test_customer_requests[0]: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75df2fc95+79861]
+	GetHandleVerifier [0x0x7ff75df2fcf0+79952]
+	(No symbol) [0x0x7ff75dcacada]
+	(No symbol) [0x0x7ff75dd04457]
+	(No symbol) [0x0x7ff75dd0471c]
+	(No symbol) [0x0x7ff75dd58217]
+	(No symbol) [0x0x7ff75dd2cb1f]
+	(No symbol) [0x0x7ff75dd54f8b]
+	(No symbol) [0x0x7ff75dd2c8b3]
+	(No symbol) [0x0x7ff75dcf5272]
+	(No symbol) [0x0x7ff75dcf6043]
+	GetHandleVerifier [0x0x7ff75e1eb9cd+2946349]
+	GetHandleVerifier [0x0x7ff75e1e5c4a+2922410]
+	GetHandleVerifier [0x0x7ff75e2059d7+3052855]
+	GetHandleVerifier [0x0x7ff75df4aa7e+189918]
+	GetHandleVerifier [0x0x7ff75df52a1f+222591]
+	GetHandleVerifier [0x0x7ff75df38ab4+116244]
+	GetHandleVerifier [0x0x7ff75df38c69+116681]
+	GetHandleVerifier [0x0x7ff75df1f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 12:00:26,238 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 12:00:31,379 - INFO - Session finished with exit status: 1
+2025-09-10 12:00:31,634 - INFO - Total tests run: 1
+2025-09-10 12:00:31,637 - INFO - Passed: 0
+2025-09-10 12:00:31,638 - INFO - Failed: 1
+2025-09-10 12:00:31,638 - INFO - Skipped: 0
+2025-09-10 12:00:31,638 - INFO - Terminal summary written.
+
+
+2025-09-10 12:02:56,526 - INFO - Test session is starting.
+2025-09-10 12:02:56,533 - INFO - Session started.
+2025-09-10 12:02:57,939 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 12:03:04,079 - INFO - Running: test_customer_requests[0]
+2025-09-10 12:03:04,083 - INFO - Fetching customer ID from database...
+2025-09-10 12:03:04,304 - INFO - CUSTOMER ID TESTING IS = 3260
+2025-09-10 12:03:04,305 - INFO - Prepaid Plan Name for Movement is [None]
+2025-09-10 12:03:04,306 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 12:03:04,306 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 12:03:04,492 - INFO - Customer = [3260] is Having a Valid Postpaid Account.
+2025-09-10 12:03:41,117 - INFO - Search By: Customer ID
+2025-09-10 12:03:58,718 - INFO - Session finished with exit status: 2
+2025-09-10 12:04:03,233 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022FA865C7D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/a4321cfdd798c054e9f621c90ba50e73
+2025-09-10 12:04:07,868 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022FA865C050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/a4321cfdd798c054e9f621c90ba50e73
+
+
+2025-09-10 12:04:19,720 - INFO - Test session is starting.
+2025-09-10 12:04:19,728 - INFO - Session started.
+2025-09-10 12:04:20,203 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 12:04:26,093 - INFO - Running: test_customer_requests[0]
+2025-09-10 12:04:26,102 - INFO - Fetching customer ID from database...
+2025-09-10 12:04:26,427 - INFO - CUSTOMER ID TESTING IS = 3260
+2025-09-10 12:04:26,427 - ERROR - Prepaid Plan Name is Mandatory Please Fill the Column [prepaid_plan_name] in Excel
+2025-09-10 12:04:26,428 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 12:04:26,428 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 12:04:26,624 - INFO - Customer = [3260] is Having a Valid Postpaid Account.
+2025-09-10 12:04:53,401 - INFO - Search By: Customer ID
+2025-09-10 12:04:59,805 - INFO - Clicked on Search icon.
+2025-09-10 12:05:04,934 - INFO - Customer Details Found
+2025-09-10 12:05:05,380 - INFO - Customer Name: BarryNguyen RodneyOrtiz ReginaldConway
+2025-09-10 12:05:07,722 - INFO - Request Type Service Requests
+2025-09-10 12:05:10,498 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 12:05:19,323 - INFO - Checking the account Radio Button.
+2025-09-10 12:05:19,600 - INFO - Clicked on Account Radio Button
+2025-09-10 12:05:42,737 - ERROR - TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff707aefc95+79861]
+	GetHandleVerifier [0x0x7ff707aefcf0+79952]
+	(No symbol) [0x0x7ff70786cada]
+	(No symbol) [0x0x7ff7078c4457]
+	(No symbol) [0x0x7ff7078c471c]
+	(No symbol) [0x0x7ff707918217]
+	(No symbol) [0x0x7ff7078ecb1f]
+	(No symbol) [0x0x7ff707914f8b]
+	(No symbol) [0x0x7ff7078ec8b3]
+	(No symbol) [0x0x7ff7078b5272]
+	(No symbol) [0x0x7ff7078b6043]
+	GetHandleVerifier [0x0x7ff707dab9cd+2946349]
+	GetHandleVerifier [0x0x7ff707da5c4a+2922410]
+	GetHandleVerifier [0x0x7ff707dc59d7+3052855]
+	GetHandleVerifier [0x0x7ff707b0aa7e+189918]
+	GetHandleVerifier [0x0x7ff707b12a1f+222591]
+	GetHandleVerifier [0x0x7ff707af8ab4+116244]
+	GetHandleVerifier [0x0x7ff707af8c69+116681]
+	GetHandleVerifier [0x0x7ff707adf048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 174)
+2025-09-10 12:05:43,290 - ERROR - Exception in test_customer_requests[0]: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff707aefc95+79861]
+	GetHandleVerifier [0x0x7ff707aefcf0+79952]
+	(No symbol) [0x0x7ff70786cada]
+	(No symbol) [0x0x7ff7078c4457]
+	(No symbol) [0x0x7ff7078c471c]
+	(No symbol) [0x0x7ff707918217]
+	(No symbol) [0x0x7ff7078ecb1f]
+	(No symbol) [0x0x7ff707914f8b]
+	(No symbol) [0x0x7ff7078ec8b3]
+	(No symbol) [0x0x7ff7078b5272]
+	(No symbol) [0x0x7ff7078b6043]
+	GetHandleVerifier [0x0x7ff707dab9cd+2946349]
+	GetHandleVerifier [0x0x7ff707da5c4a+2922410]
+	GetHandleVerifier [0x0x7ff707dc59d7+3052855]
+	GetHandleVerifier [0x0x7ff707b0aa7e+189918]
+	GetHandleVerifier [0x0x7ff707b12a1f+222591]
+	GetHandleVerifier [0x0x7ff707af8ab4+116244]
+	GetHandleVerifier [0x0x7ff707af8c69+116681]
+	GetHandleVerifier [0x0x7ff707adf048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 12:05:43,292 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 12:05:48,078 - INFO - Session finished with exit status: 1
+2025-09-10 12:05:48,275 - INFO - Total tests run: 1
+2025-09-10 12:05:48,276 - INFO - Passed: 0
+2025-09-10 12:05:48,276 - INFO - Failed: 1
+2025-09-10 12:05:48,276 - INFO - Skipped: 0
+2025-09-10 12:05:48,277 - INFO - Terminal summary written.
+
+
+2025-09-10 12:07:08,411 - INFO - Test session is starting.
+2025-09-10 12:07:08,417 - INFO - Session started.
+2025-09-10 12:07:08,987 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 12:07:19,197 - INFO - Running: test_customer_requests[0]
+2025-09-10 12:07:19,205 - INFO - Fetching customer ID from database...
+2025-09-10 12:07:19,417 - INFO - CUSTOMER ID TESTING IS = 3260
+2025-09-10 12:07:19,418 - ERROR - Prepaid Plan Name is Mandatory Please Fill the Column [prepaid_plan_name] in Excel
+2025-09-10 12:07:19,420 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 12:07:19,421 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 12:07:19,549 - INFO - Customer = [3260] is Having a Valid Postpaid Account.
+2025-09-10 12:07:40,189 - INFO - Search By: Customer ID
+2025-09-10 12:07:59,640 - INFO - Session finished with exit status: 2
+
+
+2025-09-10 12:08:11,352 - INFO - Test session is starting.
+2025-09-10 12:08:11,357 - INFO - Session started.
+2025-09-10 12:08:11,783 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 12:08:16,687 - INFO - Running: test_customer_requests[0]
+2025-09-10 12:08:16,701 - INFO - Fetching customer ID from database...
+2025-09-10 12:08:16,981 - INFO - CUSTOMER ID TESTING IS = 3260
+2025-09-10 12:08:16,982 - ERROR - Prepaid Plan Name is Mandatory Please Fill the Column [prepaid_plan_name] in Excel
+2025-09-10 12:08:16,998 - ERROR - Exception: AssertionError: assert None (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 79)
+2025-09-10 12:08:17,642 - ERROR - Exception in test_customer_requests[0]: assert None
+2025-09-10 12:08:17,643 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 12:08:20,833 - INFO - Session finished with exit status: 1
+2025-09-10 12:08:21,493 - INFO - Total tests run: 1
+2025-09-10 12:08:21,494 - INFO - Passed: 0
+2025-09-10 12:08:21,495 - INFO - Failed: 1
+2025-09-10 12:08:21,495 - INFO - Skipped: 0
+2025-09-10 12:08:21,495 - INFO - Terminal summary written.
+
+
+2025-09-10 12:12:14,255 - INFO - Test session is starting.
+2025-09-10 12:12:14,262 - INFO - Session started.
+2025-09-10 12:12:14,826 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 12:12:19,958 - INFO - Running: test_customer_requests[0]
+2025-09-10 12:12:19,963 - INFO - Fetching customer ID from database...
+2025-09-10 12:12:20,132 - INFO - CUSTOMER ID TESTING IS = 3260
+2025-09-10 12:12:20,133 - ERROR - Prepaid Plan Name is Mandatory Please Fill the Column [prepaid_plan_name] in Excel
+2025-09-10 12:12:20,137 - ERROR - Exception: AssertionError: Prepaid Plan Name is Mandatory Please Fill the Column [prepaid_plan_name] in Excel
+assert None (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 79)
+2025-09-10 12:12:20,792 - ERROR - Exception in test_customer_requests[0]: Prepaid Plan Name is Mandatory Please Fill the Column [prepaid_plan_name] in Excel
+assert None
+2025-09-10 12:12:20,793 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 12:12:25,290 - INFO - Session finished with exit status: 1
+2025-09-10 12:12:25,504 - INFO - Total tests run: 1
+2025-09-10 12:12:25,504 - INFO - Passed: 0
+2025-09-10 12:12:25,505 - INFO - Failed: 1
+2025-09-10 12:12:25,506 - INFO - Skipped: 0
+2025-09-10 12:12:25,507 - INFO - Terminal summary written.
+
+
+2025-09-10 12:13:38,569 - INFO - Test session is starting.
+2025-09-10 12:13:38,575 - INFO - Session started.
+2025-09-10 12:13:39,028 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 12:13:44,727 - INFO - Running: test_customer_requests[0]
+2025-09-10 12:13:44,735 - INFO - Fetching customer ID from database...
+2025-09-10 12:13:44,906 - INFO - CUSTOMER ID TESTING IS = 3260
+2025-09-10 12:13:44,906 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 12:13:44,907 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 12:13:44,908 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 12:13:45,129 - INFO - Customer = [3260] is Having a Valid Postpaid Account.
+2025-09-10 12:14:10,658 - INFO - Search By: Customer ID
+2025-09-10 12:14:15,639 - INFO - Clicked on Search icon.
+2025-09-10 12:14:20,840 - INFO - Customer Details Found
+2025-09-10 12:14:21,437 - INFO - Customer Name: BarryNguyen RodneyOrtiz ReginaldConway
+2025-09-10 12:14:23,800 - INFO - Request Type Service Requests
+2025-09-10 12:14:26,533 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 12:14:35,597 - INFO - Checking the account Radio Button.
+2025-09-10 12:14:35,873 - INFO - Clicked on Account Radio Button
+2025-09-10 12:14:39,929 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 12:14:43,586 - INFO - Session finished with exit status: 0
+2025-09-10 12:14:43,590 - INFO - Total tests run: 1
+2025-09-10 12:14:43,591 - INFO - Passed: 1
+2025-09-10 12:14:43,591 - INFO - Failed: 0
+2025-09-10 12:14:43,591 - INFO - Skipped: 0
+2025-09-10 12:14:43,591 - INFO - Terminal summary written.
+
+
+2025-09-10 12:33:29,891 - INFO - Test session is starting.
+2025-09-10 12:33:29,897 - INFO - Session started.
+2025-09-10 12:33:30,368 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 12:33:35,496 - INFO - Running: test_customer_requests[0]
+2025-09-10 12:33:35,503 - INFO - Fetching customer ID from database...
+2025-09-10 12:33:35,940 - INFO - CUSTOMER ID TESTING IS = 3262
+2025-09-10 12:33:35,941 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 12:33:35,942 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 12:33:35,942 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 12:33:36,075 - INFO - Customer = [3262] is Having a Valid Postpaid Account.
+2025-09-10 12:34:08,111 - INFO - Search By: Customer ID
+2025-09-10 12:34:13,882 - INFO - Clicked on Search icon.
+2025-09-10 12:34:18,964 - INFO - Customer Details Found
+2025-09-10 12:34:19,260 - INFO - Customer Name: JamesBeasley RyanGrant LisaSanders
+2025-09-10 12:34:21,441 - INFO - Request Type Service Requests
+2025-09-10 12:34:24,191 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 12:34:34,795 - INFO - Checking the account Radio Button.
+2025-09-10 12:34:35,270 - INFO - Clicked on Account Radio Button
+2025-09-10 12:34:42,457 - ERROR - Exception: ElementClickInterceptedException: Message: element click intercepted: Element <button _ngcontent-ywf-c159="" aria-haspopup="true" mat-menu-item="" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" class="mat-focus-indicator mat-menu-trigger nav-link dropdown-toggle ng-tns-c159-0 mat-menu-item" tabindex="0" aria-disabled="false">...</button> is not clickable at point (86, 69). Other element would receive the click: <div _ngcontent-ywf-c139="" tabindex="-1" role="dialog" class="modal d-block custom-modal ng-star-inserted">...</div>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75d89fc95+79861]
+	GetHandleVerifier [0x0x7ff75d89fcf0+79952]
+	(No symbol) [0x0x7ff75d61cada]
+	(No symbol) [0x0x7ff75d67c5d9]
+	(No symbol) [0x0x7ff75d679f5e]
+	(No symbol) [0x0x7ff75d676eb1]
+	(No symbol) [0x0x7ff75d675da0]
+	(No symbol) [0x0x7ff75d667338]
+	(No symbol) [0x0x7ff75d69cada]
+	(No symbol) [0x0x7ff75d666bc6]
+	(No symbol) [0x0x7ff75d69ccf0]
+	(No symbol) [0x0x7ff75d6c4f8b]
+	(No symbol) [0x0x7ff75d69c8b3]
+	(No symbol) [0x0x7ff75d665272]
+	(No symbol) [0x0x7ff75d666043]
+	GetHandleVerifier [0x0x7ff75db5b9cd+2946349]
+	GetHandleVerifier [0x0x7ff75db55c4a+2922410]
+	GetHandleVerifier [0x0x7ff75db759d7+3052855]
+	GetHandleVerifier [0x0x7ff75d8baa7e+189918]
+	GetHandleVerifier [0x0x7ff75d8c2a1f+222591]
+	GetHandleVerifier [0x0x7ff75d8a8ab4+116244]
+	GetHandleVerifier [0x0x7ff75d8a8c69+116681]
+	GetHandleVerifier [0x0x7ff75d88f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 188)
+2025-09-10 12:34:43,046 - ERROR - Exception in test_customer_requests[0]: Message: element click intercepted: Element <button _ngcontent-ywf-c159="" aria-haspopup="true" mat-menu-item="" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" class="mat-focus-indicator mat-menu-trigger nav-link dropdown-toggle ng-tns-c159-0 mat-menu-item" tabindex="0" aria-disabled="false">...</button> is not clickable at point (86, 69). Other element would receive the click: <div _ngcontent-ywf-c139="" tabindex="-1" role="dialog" class="modal d-block custom-modal ng-star-inserted">...</div>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff75d89fc95+79861]
+	GetHandleVerifier [0x0x7ff75d89fcf0+79952]
+	(No symbol) [0x0x7ff75d61cada]
+	(No symbol) [0x0x7ff75d67c5d9]
+	(No symbol) [0x0x7ff75d679f5e]
+	(No symbol) [0x0x7ff75d676eb1]
+	(No symbol) [0x0x7ff75d675da0]
+	(No symbol) [0x0x7ff75d667338]
+	(No symbol) [0x0x7ff75d69cada]
+	(No symbol) [0x0x7ff75d666bc6]
+	(No symbol) [0x0x7ff75d69ccf0]
+	(No symbol) [0x0x7ff75d6c4f8b]
+	(No symbol) [0x0x7ff75d69c8b3]
+	(No symbol) [0x0x7ff75d665272]
+	(No symbol) [0x0x7ff75d666043]
+	GetHandleVerifier [0x0x7ff75db5b9cd+2946349]
+	GetHandleVerifier [0x0x7ff75db55c4a+2922410]
+	GetHandleVerifier [0x0x7ff75db759d7+3052855]
+	GetHandleVerifier [0x0x7ff75d8baa7e+189918]
+	GetHandleVerifier [0x0x7ff75d8c2a1f+222591]
+	GetHandleVerifier [0x0x7ff75d8a8ab4+116244]
+	GetHandleVerifier [0x0x7ff75d8a8c69+116681]
+	GetHandleVerifier [0x0x7ff75d88f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 12:34:43,049 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 12:34:48,048 - INFO - Session finished with exit status: 1
+2025-09-10 12:34:48,967 - INFO - Total tests run: 1
+2025-09-10 12:34:48,967 - INFO - Passed: 0
+2025-09-10 12:34:48,968 - INFO - Failed: 1
+2025-09-10 12:34:48,969 - INFO - Skipped: 0
+2025-09-10 12:34:48,970 - INFO - Terminal summary written.
+
+
+2025-09-10 12:51:12,000 - INFO - Test session is starting.
+2025-09-10 12:51:12,005 - INFO - Session started.
+2025-09-10 12:51:12,602 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 12:51:21,915 - INFO - Running: test_customer_requests[0]
+2025-09-10 12:51:21,924 - INFO - Fetching customer ID from database...
+2025-09-10 12:51:22,152 - INFO - CUSTOMER ID TESTING IS = 3264
+2025-09-10 12:51:22,154 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 12:51:22,155 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 12:51:22,156 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 12:51:22,309 - INFO - Customer = [3264] is Having a Valid Postpaid Account.
+2025-09-10 12:51:42,164 - INFO - Search By: Customer ID
+2025-09-10 12:51:47,359 - INFO - Clicked on Search icon.
+2025-09-10 12:51:52,511 - INFO - Customer Details Found
+2025-09-10 12:51:52,894 - INFO - Customer Name: ErinMoore MitchellWagner NathanScott
+2025-09-10 12:51:55,189 - INFO - Request Type Service Requests
+2025-09-10 12:51:57,982 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 12:52:08,560 - INFO - Checking the account Radio Button.
+2025-09-10 12:52:08,808 - INFO - Clicked on Account Radio Button
+2025-09-10 12:52:16,138 - INFO - Verify Contract Details In the Customer 360 View
+2025-09-10 12:52:29,112 - ERROR - Exception: ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6cf8bfc95+79861]
+	GetHandleVerifier [0x0x7ff6cf8bfcf0+79952]
+	(No symbol) [0x0x7ff6cf63c8fc]
+	(No symbol) [0x0x7ff6cf6959c3]
+	(No symbol) [0x0x7ff6cf687338]
+	(No symbol) [0x0x7ff6cf6bcada]
+	(No symbol) [0x0x7ff6cf686bc6]
+	(No symbol) [0x0x7ff6cf6bccf0]
+	(No symbol) [0x0x7ff6cf6e4f8b]
+	(No symbol) [0x0x7ff6cf6bc8b3]
+	(No symbol) [0x0x7ff6cf685272]
+	(No symbol) [0x0x7ff6cf686043]
+	GetHandleVerifier [0x0x7ff6cfb7b9cd+2946349]
+	GetHandleVerifier [0x0x7ff6cfb75c4a+2922410]
+	GetHandleVerifier [0x0x7ff6cfb959d7+3052855]
+	GetHandleVerifier [0x0x7ff6cf8daa7e+189918]
+	GetHandleVerifier [0x0x7ff6cf8e2a1f+222591]
+	GetHandleVerifier [0x0x7ff6cf8c8ab4+116244]
+	GetHandleVerifier [0x0x7ff6cf8c8c69+116681]
+	GetHandleVerifier [0x0x7ff6cf8af048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 193)
+2025-09-10 12:52:37,649 - ERROR - Exception in test_customer_requests[0]: Message: element not interactable
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6cf8bfc95+79861]
+	GetHandleVerifier [0x0x7ff6cf8bfcf0+79952]
+	(No symbol) [0x0x7ff6cf63c8fc]
+	(No symbol) [0x0x7ff6cf6959c3]
+	(No symbol) [0x0x7ff6cf687338]
+	(No symbol) [0x0x7ff6cf6bcada]
+	(No symbol) [0x0x7ff6cf686bc6]
+	(No symbol) [0x0x7ff6cf6bccf0]
+	(No symbol) [0x0x7ff6cf6e4f8b]
+	(No symbol) [0x0x7ff6cf6bc8b3]
+	(No symbol) [0x0x7ff6cf685272]
+	(No symbol) [0x0x7ff6cf686043]
+	GetHandleVerifier [0x0x7ff6cfb7b9cd+2946349]
+	GetHandleVerifier [0x0x7ff6cfb75c4a+2922410]
+	GetHandleVerifier [0x0x7ff6cfb959d7+3052855]
+	GetHandleVerifier [0x0x7ff6cf8daa7e+189918]
+	GetHandleVerifier [0x0x7ff6cf8e2a1f+222591]
+	GetHandleVerifier [0x0x7ff6cf8c8ab4+116244]
+	GetHandleVerifier [0x0x7ff6cf8c8c69+116681]
+	GetHandleVerifier [0x0x7ff6cf8af048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 12:52:37,652 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 12:52:46,490 - INFO - Session finished with exit status: 1
+2025-09-10 12:52:46,653 - INFO - Total tests run: 1
+2025-09-10 12:52:46,654 - INFO - Passed: 0
+2025-09-10 12:52:46,654 - INFO - Failed: 1
+2025-09-10 12:52:46,655 - INFO - Skipped: 0
+2025-09-10 12:52:46,655 - INFO - Terminal summary written.
+
+
+2025-09-10 13:03:30,260 - INFO - Test session is starting.
+2025-09-10 13:03:30,269 - INFO - Session started.
+2025-09-10 13:03:31,145 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 13:03:40,038 - INFO - Running: test_customer_requests[0]
+2025-09-10 13:03:40,061 - INFO - Fetching customer ID from database...
+2025-09-10 13:03:40,642 - INFO - CUSTOMER ID TESTING IS = 3266
+2025-09-10 13:03:40,655 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 13:03:40,656 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 13:03:40,658 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 13:03:41,303 - INFO - Customer = [3266] is Having a Valid Postpaid Account.
+2025-09-10 13:04:14,949 - INFO - Search By: Customer ID
+2025-09-10 13:04:21,717 - INFO - Clicked on Search icon.
+2025-09-10 13:04:26,818 - INFO - Customer Details Found
+2025-09-10 13:04:27,093 - INFO - Customer Name: SavannahWells BrandiWright MatthewTurner
+2025-09-10 13:04:29,396 - INFO - Request Type Service Requests
+2025-09-10 13:04:32,152 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 13:04:41,053 - INFO - Checking the account Radio Button.
+2025-09-10 13:04:41,370 - INFO - Clicked on Account Radio Button
+2025-09-10 13:04:50,044 - INFO - Verify Contract Details In the Customer 360 View
+2025-09-10 13:05:01,032 - INFO - Clicking on Customer 360 Button.
+2025-09-10 13:05:18,260 - ERROR - TimeoutException: Message: xpath //div[@class='col'] explicit wait failed None
+Stacktrace:
+	GetHandleVerifier [0x0x7ff61da0fc95+79861]
+	GetHandleVerifier [0x0x7ff61da0fcf0+79952]
+	(No symbol) [0x0x7ff61d78cada]
+	(No symbol) [0x0x7ff61d7e4457]
+	(No symbol) [0x0x7ff61d7e471c]
+	(No symbol) [0x0x7ff61d838217]
+	(No symbol) [0x0x7ff61d80cb1f]
+	(No symbol) [0x0x7ff61d834f8b]
+	(No symbol) [0x0x7ff61d80c8b3]
+	(No symbol) [0x0x7ff61d7d5272]
+	(No symbol) [0x0x7ff61d7d6043]
+	GetHandleVerifier [0x0x7ff61dccb9cd+2946349]
+	GetHandleVerifier [0x0x7ff61dcc5c4a+2922410]
+	GetHandleVerifier [0x0x7ff61dce59d7+3052855]
+	GetHandleVerifier [0x0x7ff61da2aa7e+189918]
+	GetHandleVerifier [0x0x7ff61da32a1f+222591]
+	GetHandleVerifier [0x0x7ff61da18ab4+116244]
+	GetHandleVerifier [0x0x7ff61da18c69+116681]
+	GetHandleVerifier [0x0x7ff61d9ff048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 206)
+2025-09-10 13:05:19,666 - ERROR - Exception in test_customer_requests[0]: Message: xpath //div[@class='col'] explicit wait failed None
+Stacktrace:
+	GetHandleVerifier [0x0x7ff61da0fc95+79861]
+	GetHandleVerifier [0x0x7ff61da0fcf0+79952]
+	(No symbol) [0x0x7ff61d78cada]
+	(No symbol) [0x0x7ff61d7e4457]
+	(No symbol) [0x0x7ff61d7e471c]
+	(No symbol) [0x0x7ff61d838217]
+	(No symbol) [0x0x7ff61d80cb1f]
+	(No symbol) [0x0x7ff61d834f8b]
+	(No symbol) [0x0x7ff61d80c8b3]
+	(No symbol) [0x0x7ff61d7d5272]
+	(No symbol) [0x0x7ff61d7d6043]
+	GetHandleVerifier [0x0x7ff61dccb9cd+2946349]
+	GetHandleVerifier [0x0x7ff61dcc5c4a+2922410]
+	GetHandleVerifier [0x0x7ff61dce59d7+3052855]
+	GetHandleVerifier [0x0x7ff61da2aa7e+189918]
+	GetHandleVerifier [0x0x7ff61da32a1f+222591]
+	GetHandleVerifier [0x0x7ff61da18ab4+116244]
+	GetHandleVerifier [0x0x7ff61da18c69+116681]
+	GetHandleVerifier [0x0x7ff61d9ff048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 13:05:19,669 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 13:05:46,200 - INFO - Session finished with exit status: 1
+2025-09-10 13:05:46,336 - INFO - Total tests run: 1
+2025-09-10 13:05:46,336 - INFO - Passed: 0
+2025-09-10 13:05:46,337 - INFO - Failed: 1
+2025-09-10 13:05:46,337 - INFO - Skipped: 0
+2025-09-10 13:05:46,337 - INFO - Terminal summary written.
+
+
+2025-09-10 14:29:33,950 - INFO - Test session is starting.
+2025-09-10 14:29:33,956 - INFO - Session started.
+2025-09-10 14:29:34,603 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 14:29:47,893 - INFO - Running: test_customer_requests[0]
+2025-09-10 14:29:47,924 - INFO - Fetching customer ID from database...
+2025-09-10 14:29:54,939 - INFO - CUSTOMER ID TESTING IS = 3266
+2025-09-10 14:29:54,940 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 14:29:54,944 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 14:29:54,947 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 14:29:55,088 - INFO - Customer = [3266] is Having a Valid Postpaid Account.
+2025-09-10 14:30:20,428 - INFO - Search By: Customer ID
+2025-09-10 14:30:25,712 - INFO - Clicked on Search icon.
+2025-09-10 14:30:31,028 - INFO - Customer Details Found
+2025-09-10 14:30:31,727 - INFO - Customer Name: SavannahWells BrandiWright MatthewTurner
+2025-09-10 14:30:34,202 - INFO - Request Type Service Requests
+2025-09-10 14:30:36,938 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 14:30:49,350 - INFO - Checking the account Radio Button.
+2025-09-10 14:30:49,649 - INFO - Clicked on Account Radio Button
+2025-09-10 14:31:13,834 - ERROR - TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6e854fc95+79861]
+	GetHandleVerifier [0x0x7ff6e854fcf0+79952]
+	(No symbol) [0x0x7ff6e82ccada]
+	(No symbol) [0x0x7ff6e8324457]
+	(No symbol) [0x0x7ff6e832471c]
+	(No symbol) [0x0x7ff6e8378217]
+	(No symbol) [0x0x7ff6e834cb1f]
+	(No symbol) [0x0x7ff6e8374f8b]
+	(No symbol) [0x0x7ff6e834c8b3]
+	(No symbol) [0x0x7ff6e8315272]
+	(No symbol) [0x0x7ff6e8316043]
+	GetHandleVerifier [0x0x7ff6e880b9cd+2946349]
+	GetHandleVerifier [0x0x7ff6e8805c4a+2922410]
+	GetHandleVerifier [0x0x7ff6e88259d7+3052855]
+	GetHandleVerifier [0x0x7ff6e856aa7e+189918]
+	GetHandleVerifier [0x0x7ff6e8572a1f+222591]
+	GetHandleVerifier [0x0x7ff6e8558ab4+116244]
+	GetHandleVerifier [0x0x7ff6e8558c69+116681]
+	GetHandleVerifier [0x0x7ff6e853f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 175)
+2025-09-10 14:31:17,350 - ERROR - Exception in test_customer_requests[0]: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6e854fc95+79861]
+	GetHandleVerifier [0x0x7ff6e854fcf0+79952]
+	(No symbol) [0x0x7ff6e82ccada]
+	(No symbol) [0x0x7ff6e8324457]
+	(No symbol) [0x0x7ff6e832471c]
+	(No symbol) [0x0x7ff6e8378217]
+	(No symbol) [0x0x7ff6e834cb1f]
+	(No symbol) [0x0x7ff6e8374f8b]
+	(No symbol) [0x0x7ff6e834c8b3]
+	(No symbol) [0x0x7ff6e8315272]
+	(No symbol) [0x0x7ff6e8316043]
+	GetHandleVerifier [0x0x7ff6e880b9cd+2946349]
+	GetHandleVerifier [0x0x7ff6e8805c4a+2922410]
+	GetHandleVerifier [0x0x7ff6e88259d7+3052855]
+	GetHandleVerifier [0x0x7ff6e856aa7e+189918]
+	GetHandleVerifier [0x0x7ff6e8572a1f+222591]
+	GetHandleVerifier [0x0x7ff6e8558ab4+116244]
+	GetHandleVerifier [0x0x7ff6e8558c69+116681]
+	GetHandleVerifier [0x0x7ff6e853f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 14:31:17,353 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 14:31:20,024 - INFO - Session finished with exit status: 1
+2025-09-10 14:31:20,140 - INFO - Total tests run: 1
+2025-09-10 14:31:20,140 - INFO - Passed: 0
+2025-09-10 14:31:20,140 - INFO - Failed: 1
+2025-09-10 14:31:20,141 - INFO - Skipped: 0
+2025-09-10 14:31:20,141 - INFO - Terminal summary written.
+
+
+2025-09-10 14:41:51,391 - INFO - Test session is starting.
+2025-09-10 14:41:51,397 - INFO - Session started.
+2025-09-10 14:41:56,519 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 14:42:03,336 - INFO - Running: test_customer_requests[0]
+2025-09-10 14:42:03,377 - INFO - Fetching customer ID from database...
+2025-09-10 14:42:04,241 - INFO - CUSTOMER ID TESTING IS = 3266
+2025-09-10 14:42:04,244 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 14:42:04,245 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 14:42:04,246 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 14:42:04,451 - INFO - Customer = [3266] is Having a Valid Postpaid Account.
+2025-09-10 14:42:33,476 - INFO - Search By: Customer ID
+2025-09-10 14:42:38,532 - INFO - Clicked on Search icon.
+2025-09-10 14:42:43,597 - INFO - Customer Details Found
+2025-09-10 14:42:43,877 - INFO - Customer Name: SavannahWells BrandiWright MatthewTurner
+2025-09-10 14:42:46,078 - INFO - Request Type Service Requests
+2025-09-10 14:42:48,918 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 14:42:58,748 - INFO - Checking the account Radio Button.
+2025-09-10 14:42:58,949 - INFO - Clicked on Account Radio Button
+2025-09-10 14:43:25,112 - ERROR - TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff659a5fc95+79861]
+	GetHandleVerifier [0x0x7ff659a5fcf0+79952]
+	(No symbol) [0x0x7ff6597dcada]
+	(No symbol) [0x0x7ff659834457]
+	(No symbol) [0x0x7ff65983471c]
+	(No symbol) [0x0x7ff659888217]
+	(No symbol) [0x0x7ff65985cb1f]
+	(No symbol) [0x0x7ff659884f8b]
+	(No symbol) [0x0x7ff65985c8b3]
+	(No symbol) [0x0x7ff659825272]
+	(No symbol) [0x0x7ff659826043]
+	GetHandleVerifier [0x0x7ff659d1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff659d15c4a+2922410]
+	GetHandleVerifier [0x0x7ff659d359d7+3052855]
+	GetHandleVerifier [0x0x7ff659a7aa7e+189918]
+	GetHandleVerifier [0x0x7ff659a82a1f+222591]
+	GetHandleVerifier [0x0x7ff659a68ab4+116244]
+	GetHandleVerifier [0x0x7ff659a68c69+116681]
+	GetHandleVerifier [0x0x7ff659a4f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 175)
+2025-09-10 14:43:32,064 - ERROR - Exception in test_customer_requests[0]: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x7ff659a5fc95+79861]
+	GetHandleVerifier [0x0x7ff659a5fcf0+79952]
+	(No symbol) [0x0x7ff6597dcada]
+	(No symbol) [0x0x7ff659834457]
+	(No symbol) [0x0x7ff65983471c]
+	(No symbol) [0x0x7ff659888217]
+	(No symbol) [0x0x7ff65985cb1f]
+	(No symbol) [0x0x7ff659884f8b]
+	(No symbol) [0x0x7ff65985c8b3]
+	(No symbol) [0x0x7ff659825272]
+	(No symbol) [0x0x7ff659826043]
+	GetHandleVerifier [0x0x7ff659d1b9cd+2946349]
+	GetHandleVerifier [0x0x7ff659d15c4a+2922410]
+	GetHandleVerifier [0x0x7ff659d359d7+3052855]
+	GetHandleVerifier [0x0x7ff659a7aa7e+189918]
+	GetHandleVerifier [0x0x7ff659a82a1f+222591]
+	GetHandleVerifier [0x0x7ff659a68ab4+116244]
+	GetHandleVerifier [0x0x7ff659a68c69+116681]
+	GetHandleVerifier [0x0x7ff659a4f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 14:43:32,066 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 14:43:35,356 - INFO - Session finished with exit status: 1
+2025-09-10 14:43:35,462 - INFO - Total tests run: 1
+2025-09-10 14:43:35,462 - INFO - Passed: 0
+2025-09-10 14:43:35,463 - INFO - Failed: 1
+2025-09-10 14:43:35,463 - INFO - Skipped: 0
+2025-09-10 14:43:35,463 - INFO - Terminal summary written.
+
+
+2025-09-10 15:01:15,897 - INFO - Test session is starting.
+2025-09-10 15:01:15,907 - INFO - Session started.
+2025-09-10 15:01:17,576 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 15:01:42,461 - INFO - Running: test_customer_requests[0]
+2025-09-10 15:01:42,472 - INFO - Fetching customer ID from database...
+2025-09-10 15:01:43,333 - INFO - CUSTOMER ID TESTING IS = 3266
+2025-09-10 15:01:43,334 - ERROR - Prepaid Plan Name is Mandatory Please Fill the Column [prepaid_plan_name] in Excel
+2025-09-10 15:01:43,359 - ERROR - Exception: AssertionError: Prepaid Plan Name is Mandatory Please Fill the Column [prepaid_plan_name] in Excel
+assert None (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 79)
+2025-09-10 15:01:45,013 - ERROR - Exception in test_customer_requests[0]: Prepaid Plan Name is Mandatory Please Fill the Column [prepaid_plan_name] in Excel
+assert None
+2025-09-10 15:01:45,017 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 15:01:50,985 - INFO - Session finished with exit status: 1
+2025-09-10 15:01:51,453 - INFO - Total tests run: 1
+2025-09-10 15:01:51,454 - INFO - Passed: 0
+2025-09-10 15:01:51,454 - INFO - Failed: 1
+2025-09-10 15:01:51,455 - INFO - Skipped: 0
+2025-09-10 15:01:51,455 - INFO - Terminal summary written.
+
+
+2025-09-10 15:42:39,335 - INFO - Test session is starting.
+2025-09-10 15:42:39,342 - INFO - Session started.
+2025-09-10 15:42:40,022 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 15:42:49,984 - INFO - Running: test_customer_requests[0]
+2025-09-10 15:42:50,000 - INFO - Fetching customer ID from database...
+2025-09-10 15:42:51,798 - INFO - CUSTOMER ID TESTING IS = 3268
+2025-09-10 15:42:51,799 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 15:42:51,800 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 15:42:51,801 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 15:42:52,368 - INFO - Customer = [3268] is Having a Valid Postpaid Account.
+2025-09-10 15:43:23,077 - INFO - Search By: Customer ID
+2025-09-10 15:43:29,647 - INFO - Clicked on Search icon.
+2025-09-10 15:43:34,749 - INFO - Customer Details Found
+2025-09-10 15:43:35,043 - INFO - Customer Name: JaredSavage RobertRuiz MichelleLong
+2025-09-10 15:43:37,303 - INFO - Request Type Service Requests
+2025-09-10 15:43:40,172 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 15:43:51,436 - INFO - Checking the account Radio Button.
+2025-09-10 15:43:51,748 - INFO - Clicked on Account Radio Button
+2025-09-10 15:43:58,927 - INFO - Verify Contract Details In the Customer 360 View
+2025-09-10 15:44:07,433 - INFO - Clicking on Customer 360 Button.
+2025-09-10 15:44:23,833 - ERROR - TimeoutException: Message: xpath //div[@class='col'] explicit wait failed None
+Stacktrace:
+	GetHandleVerifier [0x0x7ff686c3fc95+79861]
+	GetHandleVerifier [0x0x7ff686c3fcf0+79952]
+	(No symbol) [0x0x7ff6869bcada]
+	(No symbol) [0x0x7ff686a14457]
+	(No symbol) [0x0x7ff686a1471c]
+	(No symbol) [0x0x7ff686a68217]
+	(No symbol) [0x0x7ff686a3cb1f]
+	(No symbol) [0x0x7ff686a64f8b]
+	(No symbol) [0x0x7ff686a3c8b3]
+	(No symbol) [0x0x7ff686a05272]
+	(No symbol) [0x0x7ff686a06043]
+	GetHandleVerifier [0x0x7ff686efb9cd+2946349]
+	GetHandleVerifier [0x0x7ff686ef5c4a+2922410]
+	GetHandleVerifier [0x0x7ff686f159d7+3052855]
+	GetHandleVerifier [0x0x7ff686c5aa7e+189918]
+	GetHandleVerifier [0x0x7ff686c62a1f+222591]
+	GetHandleVerifier [0x0x7ff686c48ab4+116244]
+	GetHandleVerifier [0x0x7ff686c48c69+116681]
+	GetHandleVerifier [0x0x7ff686c2f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 206)
+2025-09-10 15:44:24,761 - ERROR - Exception in test_customer_requests[0]: Message: xpath //div[@class='col'] explicit wait failed None
+Stacktrace:
+	GetHandleVerifier [0x0x7ff686c3fc95+79861]
+	GetHandleVerifier [0x0x7ff686c3fcf0+79952]
+	(No symbol) [0x0x7ff6869bcada]
+	(No symbol) [0x0x7ff686a14457]
+	(No symbol) [0x0x7ff686a1471c]
+	(No symbol) [0x0x7ff686a68217]
+	(No symbol) [0x0x7ff686a3cb1f]
+	(No symbol) [0x0x7ff686a64f8b]
+	(No symbol) [0x0x7ff686a3c8b3]
+	(No symbol) [0x0x7ff686a05272]
+	(No symbol) [0x0x7ff686a06043]
+	GetHandleVerifier [0x0x7ff686efb9cd+2946349]
+	GetHandleVerifier [0x0x7ff686ef5c4a+2922410]
+	GetHandleVerifier [0x0x7ff686f159d7+3052855]
+	GetHandleVerifier [0x0x7ff686c5aa7e+189918]
+	GetHandleVerifier [0x0x7ff686c62a1f+222591]
+	GetHandleVerifier [0x0x7ff686c48ab4+116244]
+	GetHandleVerifier [0x0x7ff686c48c69+116681]
+	GetHandleVerifier [0x0x7ff686c2f048+11176]
+	BaseThreadInitThunk [0x0x7ffdecb8e8d7+23]
+	RtlUserThreadStart [0x0x7ffdede9c34c+44]
+
+2025-09-10 15:44:24,764 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 15:44:29,348 - INFO - Session finished with exit status: 1
+2025-09-10 15:44:29,491 - INFO - Total tests run: 1
+2025-09-10 15:44:29,492 - INFO - Passed: 0
+2025-09-10 15:44:29,492 - INFO - Failed: 1
+2025-09-10 15:44:29,492 - INFO - Skipped: 0
+2025-09-10 15:44:29,493 - INFO - Terminal summary written.
+
+
+2025-09-10 15:49:29,053 - INFO - Test session is starting.
+2025-09-10 15:49:29,059 - INFO - Session started.
+2025-09-10 15:49:29,647 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 15:49:35,402 - INFO - Running: test_customer_requests[0]
+2025-09-10 15:49:35,409 - INFO - Fetching customer ID from database...
+2025-09-10 15:49:35,588 - INFO - CUSTOMER ID TESTING IS = 3270
+2025-09-10 15:49:35,589 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 15:49:35,589 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 15:49:35,589 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 15:49:35,780 - INFO - Customer = [3270] is Having a Valid Postpaid Account.
+2025-09-10 15:49:52,800 - INFO - Search By: Customer ID
+2025-09-10 15:49:59,678 - INFO - Clicked on Search icon.
+2025-09-10 15:50:04,900 - INFO - Customer Details Found
+2025-09-10 15:50:05,452 - INFO - Customer Name: MariaTodd DanielRamsey MeganGiles
+2025-09-10 15:50:07,870 - INFO - Request Type Service Requests
+2025-09-10 15:50:10,732 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 15:50:19,541 - INFO - Checking the account Radio Button.
+2025-09-10 15:50:19,869 - INFO - Clicked on Account Radio Button
+2025-09-10 15:50:26,715 - INFO - Updating the Test Data
+2025-09-10 15:50:26,833 - ERROR - Exception: TypeError: ProcessingDbUtil.update_tets_customer_status_in_db() missing 1 required positional argument: 'cust_id' (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 188)
+2025-09-10 15:50:31,489 - ERROR - Exception in test_customer_requests[0]: ProcessingDbUtil.update_tets_customer_status_in_db() missing 1 required positional argument: 'cust_id'
+2025-09-10 15:50:31,490 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 15:50:39,060 - INFO - Session finished with exit status: 1
+2025-09-10 15:50:39,681 - INFO - Total tests run: 1
+2025-09-10 15:50:39,682 - INFO - Passed: 0
+2025-09-10 15:50:39,682 - INFO - Failed: 1
+2025-09-10 15:50:39,682 - INFO - Skipped: 0
+2025-09-10 15:50:39,682 - INFO - Terminal summary written.
+
+
+2025-09-10 15:56:38,469 - INFO - Test session is starting.
+2025-09-10 15:56:38,475 - INFO - Session started.
+2025-09-10 15:56:39,022 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 15:56:44,604 - INFO - Running: test_customer_requests[0]
+2025-09-10 15:56:44,608 - INFO - Fetching customer ID from database...
+2025-09-10 15:56:44,907 - INFO - CUSTOMER ID TESTING IS = 3272
+2025-09-10 15:56:44,907 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 15:56:44,908 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 15:56:44,908 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 15:56:45,080 - INFO - Customer = [3272] is Having a Valid Postpaid Account.
+2025-09-10 15:57:09,977 - INFO - Search By: Customer ID
+2025-09-10 15:57:15,086 - INFO - Clicked on Search icon.
+2025-09-10 15:57:20,164 - INFO - Customer Details Found
+2025-09-10 15:57:20,440 - INFO - Customer Name: MichaelGregory LoriSandoval LisaTapia
+2025-09-10 15:57:22,633 - INFO - Request Type Service Requests
+2025-09-10 15:57:25,397 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 15:57:36,390 - INFO - Checking the account Radio Button.
+2025-09-10 15:57:36,672 - INFO - Clicked on Account Radio Button
+2025-09-10 15:57:42,820 - INFO - Updating the Test Data of Customer ID : 3272
+2025-09-10 15:57:42,830 - ERROR - Exception: TypeError: ProcessingDbUtil.update_tets_customer_status_in_db() missing 1 required positional argument: 'cust_id' (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 188)
+2025-09-10 15:57:43,552 - ERROR - Exception in test_customer_requests[0]: ProcessingDbUtil.update_tets_customer_status_in_db() missing 1 required positional argument: 'cust_id'
+2025-09-10 15:57:43,553 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 15:57:47,318 - INFO - Session finished with exit status: 1
+2025-09-10 15:57:48,056 - INFO - Total tests run: 1
+2025-09-10 15:57:48,057 - INFO - Passed: 0
+2025-09-10 15:57:48,058 - INFO - Failed: 1
+2025-09-10 15:57:48,058 - INFO - Skipped: 0
+2025-09-10 15:57:48,058 - INFO - Terminal summary written.
+
+
+2025-09-10 16:05:40,361 - INFO - Test session is starting.
+2025-09-10 16:05:40,366 - INFO - Session started.
+2025-09-10 16:05:40,874 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 16:05:45,302 - INFO - Running: test_customer_requests[0]
+2025-09-10 16:05:45,307 - INFO - Fetching customer ID from database...
+2025-09-10 16:05:45,576 - INFO - CUSTOMER ID TESTING IS = 3274
+2025-09-10 16:05:45,577 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 16:05:45,578 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 16:05:45,578 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 16:05:45,804 - INFO - Customer = [3274] is Having a Valid Postpaid Account.
+2025-09-10 16:06:03,019 - INFO - Search By: Customer ID
+2025-09-10 16:06:09,687 - INFO - Clicked on Search icon.
+2025-09-10 16:06:15,003 - INFO - Customer Details Found
+2025-09-10 16:06:15,630 - INFO - Customer Name: ChelseaDavis JohnBowers PaigeVaughan
+2025-09-10 16:06:18,043 - INFO - Request Type Service Requests
+2025-09-10 16:06:20,819 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 16:06:29,688 - INFO - Checking the account Radio Button.
+2025-09-10 16:06:29,929 - INFO - Clicked on Account Radio Button
+2025-09-10 16:06:36,060 - INFO - Updating the Test Data of Customer ID : 3274
+2025-09-10 16:06:36,070 - ERROR - Exception: TypeError: ProcessingDbUtil.update_tets_customer_status_in_db() missing 1 required positional argument: 'self' (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_post-pre_test.py, Line: 188)
+2025-09-10 16:06:36,634 - ERROR - Exception in test_customer_requests[0]: ProcessingDbUtil.update_tets_customer_status_in_db() missing 1 required positional argument: 'self'
+2025-09-10 16:06:36,635 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 16:06:42,109 - INFO - Session finished with exit status: 1
+2025-09-10 16:06:42,278 - INFO - Total tests run: 1
+2025-09-10 16:06:42,278 - INFO - Passed: 0
+2025-09-10 16:06:42,278 - INFO - Failed: 1
+2025-09-10 16:06:42,278 - INFO - Skipped: 0
+2025-09-10 16:06:42,278 - INFO - Terminal summary written.
+
+
+2025-09-10 17:12:04,596 - INFO - Test session is starting.
+2025-09-10 17:12:04,602 - INFO - Session started.
+2025-09-10 17:12:05,260 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 17:12:17,929 - INFO - Running: test_customer_requests[0]
+2025-09-10 17:12:17,942 - INFO - Fetching customer ID from database...
+2025-09-10 17:12:21,639 - INFO - CUSTOMER ID TESTING IS = 3280
+2025-09-10 17:12:21,640 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 17:12:21,641 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 17:12:21,641 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 17:12:26,451 - INFO - Customer = [3280] is Having a Valid Postpaid Account.
+2025-09-10 17:12:42,081 - INFO - Search By: Customer ID
+2025-09-10 17:12:48,912 - INFO - Clicked on Search icon.
+2025-09-10 17:12:53,974 - INFO - Customer Details Found
+2025-09-10 17:12:54,264 - INFO - Customer Name: KarenMendoza EvanSchneider ShannonAnderson
+2025-09-10 17:12:56,479 - INFO - Request Type Service Requests
+2025-09-10 17:12:59,238 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 17:13:09,104 - INFO - Checking the account Radio Button.
+2025-09-10 17:13:09,340 - INFO - Clicked on Account Radio Button
+2025-09-10 17:13:15,737 - INFO - Updating the Test Data of Customer ID : 3280
+2025-09-10 17:13:15,799 - INFO - Response = None
+2025-09-10 17:13:15,800 - INFO - Verify Contract Details In the Customer 360 View
+2025-09-10 17:13:24,293 - INFO - Clicking on Customer 360 Button.
+2025-09-10 17:13:30,952 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 17:13:33,618 - INFO - Session finished with exit status: 0
+2025-09-10 17:13:33,626 - INFO - Total tests run: 1
+2025-09-10 17:13:33,626 - INFO - Passed: 1
+2025-09-10 17:13:33,626 - INFO - Failed: 0
+2025-09-10 17:13:33,626 - INFO - Skipped: 0
+2025-09-10 17:13:33,627 - INFO - Terminal summary written.
+
+
+2025-09-10 17:22:13,720 - INFO - Test session is starting.
+2025-09-10 17:22:13,729 - INFO - Session started.
+2025-09-10 17:22:14,477 - INFO - Setting up: test_customer_requests[0]
+2025-09-10 17:22:25,313 - INFO - Running: test_customer_requests[0]
+2025-09-10 17:22:25,390 - INFO - Fetching customer ID from database...
+2025-09-10 17:22:26,520 - INFO - CUSTOMER ID TESTING IS = 3282
+2025-09-10 17:22:26,527 - INFO - Prepaid Plan Name for Movement is [9Talk]
+2025-09-10 17:22:26,531 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-10 17:22:26,531 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-10 17:22:27,126 - INFO - Customer = [3282] is Having a Valid Postpaid Account.
+2025-09-10 17:22:55,803 - INFO - Search By: Customer ID
+2025-09-10 17:23:00,802 - INFO - Clicked on Search icon.
+2025-09-10 17:23:06,016 - INFO - Customer Details Found
+2025-09-10 17:23:06,960 - INFO - Customer Name: LisaScott LaceyConrad AmberFlynn
+2025-09-10 17:23:09,564 - INFO - Request Type Service Requests
+2025-09-10 17:23:12,308 - INFO - Request Name: Post-Paid to Pre-Paid Movement
+2025-09-10 17:23:21,043 - INFO - Checking the account Radio Button.
+2025-09-10 17:23:21,362 - INFO - Clicked on Account Radio Button
+2025-09-10 17:23:27,588 - INFO - Updating the Test Data of Customer ID : 3282
+2025-09-10 17:23:27,615 - INFO - Response = None
+2025-09-10 17:23:27,616 - INFO - Verify Contract Details In the Customer 360 View
+2025-09-10 17:23:36,091 - INFO - Clicking on Customer 360 Button.
+2025-09-10 17:23:42,998 - INFO - Teardown: test_customer_requests[0]
+2025-09-10 17:23:48,578 - INFO - Session finished with exit status: 0
+2025-09-10 17:23:48,676 - INFO - Total tests run: 1
+2025-09-10 17:23:48,677 - INFO - Passed: 1
+2025-09-10 17:23:48,677 - INFO - Failed: 0
+2025-09-10 17:23:48,677 - INFO - Skipped: 0
+2025-09-10 17:23:48,677 - INFO - Terminal summary written.

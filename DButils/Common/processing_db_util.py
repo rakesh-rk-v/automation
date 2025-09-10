@@ -21,3 +21,7 @@ class ProcessingDbUtil(SqlUtil):
         query = """update sit.dbo.Customer_Details set status ='Used' where cust_id = {} """.format(cust_id)
         result = self.execute_update_query(query)
         return result
+    def update_customer_as_prepaid_in_testdb(self,cust_id):
+        query = """update sit.dbo.Customer_Details set Account_Type = 'Prepaid' where Cust_Id={}""".format(cust_id)
+        result = self.execute_update_query(query)
+        return result

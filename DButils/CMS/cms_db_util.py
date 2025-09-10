@@ -206,3 +206,12 @@ class CmsDataUtil(MySqlUtil):
                  WHERE contact_id={}""".format(cont_id)
         result = self.execute_select_query(query)
         return result
+    def check_customer_acc_type(self,customer_id,acc_type):
+        logging.info("Checking Customer Having a Postpaid Account or Not in Database.")
+        query = """ select * from dxpoms.customer_accounts ca where tenant_id = {} and CUSTOMER_ID = {} and CUSTOMER_ACCOUNT_TYPE = {}
+                """.format(self._tenant_id,customer_id,acc_type)
+        result = self.execute_select_query(query)
+        logging.debug("Executed Account Check Query : {}".format(result))
+        return result
+
+

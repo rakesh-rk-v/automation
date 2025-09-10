@@ -59,3 +59,26 @@ class PrepaidToPostpaid(RpBasePage):
 
     def click_on_rate_plan_button(self):
         self.__rate_plan_button().click()
+
+    def click_on_rp_checkbox(self, plan_name):
+        xpath_checkbox = f"//div[b[normalize-space(text())='{plan_name}']]/ancestor::div[@class='row'][1]//input[@type='checkbox']"
+        wait = WebDriverWait(self.driver, 15)
+
+        checkbox = wait.until(EC.presence_of_element_located((By.XPATH, xpath_checkbox)))
+
+        #Scrolling
+        self.driver.execute_script("""
+            var el = arguments[0], offset = 70;
+            var pos = el.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({top: pos, behavior: 'smooth'});
+        """, checkbox)
+
+        time.sleep(0.5)
+
+        xpath_label = f"//div[b[normalize-space(text())='{plan_name}']]/ancestor::div[@class='row'][1]//mat-checkbox//label"
+        label = wait.until(EC.element_to_be_clickable((By.XPATH, xpath_label)))
+
+        try:
+            label.click()
+        except:
+            self.driver.execute_script("arguments[0].click();", label)
