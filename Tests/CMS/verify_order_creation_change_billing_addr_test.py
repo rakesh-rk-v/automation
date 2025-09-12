@@ -3,32 +3,30 @@ import platform
 import sys
 import time
 import traceback
-
 import allure
 import pytest
 from selenium.common import TimeoutException
-
 from DButils.CMS.cms_db_util import CmsDataUtil
 from DButils.Common.processing_db_util import ProcessingDbUtil
 from POM.CMS.Cms_Base_Page import CmsBasePage
 from POM.CMS.Create_Request_Page import Customer_Request_Page
-from POM.CMS.change_bill_delivery_mode_Page import Change_Bill_Delivery_Mode
+from POM.CMS.change_billing_address_page import ChangeBillingAddressPage
 from POM.Common.Raptr_Base_Page import RpBasePage
-from POM.Common.yopmail_page import Mail
-from Utils.config_manager import ConfigManager
 from Utils.faker_util import FakeDataUtil
 
 
-@allure.title("Change Bill Delivery Mode")
+@allure.title("Order Creation for Post - Pre Movement")
 @allure.description_html("""
-Test Description:Verify the order is creating for a Change Bill delivery mode.<br>
+Test Description:create request by Filtering request type as "service change",<br>
+request subtype as "service change requesTC" <br>
+ and request name as "Post-Pre-Movement"
 """)
 @allure.epic("CMS Project")
 @allure.feature("Customer Requests")
 @allure.story("Positive Customer Request Flow")
 @allure.severity(allure.severity_level.CRITICAL)
-@allure.id("10003")
-@pytest.mark.datafile("change_bill_delivery_mode.xlsx")
+@allure.id("TC_3467")
+@pytest.mark.datafile("change_billing_addr.xlsx")
 def test_customer_requests(driver, screenshot_manager, _data_index):
     # Attach environment info dynamically for Allure report
     browser_name = driver.capabilities.get('browserName', 'unknown')
@@ -47,9 +45,8 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
     rp = RpBasePage(driver)
     cr = Customer_Request_Page(driver)
     cb = CmsBasePage(driver)
-    change_bill = Change_Bill_Delivery_Mode(driver)
     db = CmsDataUtil(app="cms")
-    mail = Mail(driver)
+    pom = ChangeBillingAddressPage(driver)
 
     # Test Data
     customer_id = data.get("customer_id")
@@ -58,9 +55,12 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
     request_name = data.get("request_name")
     req_alt_msg = data.get("req_alt_msg")
     remarks = FakeDataUtil.fake_last_name()
-    change_mode= None
+    address_line1 = data.get("address_line1")
+    address_line2 = data.get("address_line2")
+    city = data.get("city")
+    state = data.get("state")
+    country = data.get("country")
     request_id = None
-    customer_name = None
 
     try:
         # Step: Prepare test data from Databse If Not Exists in Data File
@@ -73,9 +73,21 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
                 else:
                     customer_id = result[0]["Cust_Id"]
         logging.info("CUSTOMER ID TESTING IS = {}".format(customer_id))
+
+        # allure.attach({"TESTING Customer ID = " : customer_id}, name="TEST Customer ID", attachment_type=allure.attachment_type.TEXT)
         with allure.step("Updating the Test Data "):
             update = ProcessingDbUtil().update_test_customer_status_in_db(customer_id)
             logging.info("Updating the test data . [{}]".format(update))
+
+        # Pre REQUEST CHECK
+        with allure.step("Checking the Customer is Having a Active Postpaid Account"):
+            logging.info("Checking the Customer is Having a Active Postpaid Account")
+            check_post_paid =  db.check_customer_acc_type(customer_id,acc_type=12)
+            if check_post_paid:
+                logging.info("Customer = [{}] is Having a Valid Postpaid Account.".format(customer_id))
+            else:
+                logging.warn("Customer = [{}] is Not Having a Valid Postpaid Account.".format(customer_id))
+                assert  "Customer = [{}] is not having a valid Postpaid Account."
 
         # Step 1: Wait for login page to load
         with allure.step("Wait for login page to load"):
@@ -87,9 +99,9 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
         with allure.step("Navigating to CMS Module"):
             rp.click_on_cms_module()
             rp.wait_for_page_to_load()
+            logging.info("Clicked on CMS Module.")
             screenshot_manager.add_screenshot(driver, "CMS Base Page")
             allure.attach(driver.get_screenshot_as_png(), name="CMS Base Page", attachment_type=allure.attachment_type.PNG)
-
 
 
         # Step 4: Go to Customer Request section
@@ -98,6 +110,7 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
             cb.click_on_customer_request_dropdown()
             cb.click_on_create_request_button()
             cb.wait_for_page_to_load()
+            logging.info("Clicked on Customer Request Section.")
             cb.click_on_search_filter_button()
             logging.info("Search By: %s", search_by)
             cb.wait_for_page_to_load()
@@ -151,119 +164,90 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
             screenshot_manager.add_screenshot(driver, "Adding the Remarks")
             allure.attach(driver.get_screenshot_as_png(), name="Adding the Remarks", attachment_type=allure.attachment_type.PNG)
 
-        # Step 9: Clicking on Customer Radio Button.
-        with allure.step("Clicking on Customer  Radio Button."):
-            cb.click_on_customer_radio_button()
+        #Selecting the Account
+        with allure.step("Clicking on Customer Account Radio Button"):
             cb.wait_for_page_to_load()
-            allure.attach(driver.get_screenshot_as_png(), name="After Clicking the Customer Radio Button", attachment_type=allure.attachment_type.PNG)
-            screenshot_manager.add_screenshot(driver, "After Clicking the Customer Radio Button")
+            cb.click_on_customer_account_radio_button()
+            cr.click_on_acc_radio_button()
+            screenshot_manager.add_screenshot(driver, "Clicking on Customer Account Radio Button")
+            allure.attach(driver.get_screenshot_as_png(), name="Clicking on Customer Account Radio Button", attachment_type=allure.attachment_type.PNG)
 
-        # Step 10: Selecting the Billing Account
-        with allure.step("Selecting the billing account."):
-            logging.info("Selecting the Billing Account")
-            change_bill.select_billing_acc_id()
-            screenshot_manager.add_screenshot(driver, "Selecting the Billing Account")
-            allure.attach(driver.get_screenshot_as_png(), name="Selecting the Billing Account", attachment_type=allure.attachment_type.PNG)
+            with allure.step("Clicking on the Yes button"):
+                cb.wait_for_page_to_load()
+                pom.click_on_yes_button()
+                screenshot_manager.add_screenshot(driver, "Clicking Yes Button")
+                allure.attach(driver.get_screenshot_as_png(), name="Clicking Yes Button",
+                               attachment_type=allure.attachment_type.PNG)
 
-        # Step 11: Getting the Customer Billing Account From DB
-        with allure.step("Getting the Customer Billing Account From DB"):
-            logging.info("Getting the Customer Billing Account From DB")
-            previous_mode = db.get_bill_deleivery_mode(customer_id)
-            if previous_mode == 1:
-                change_mode = "Soft Copy"
-            else:
-                change_mode = "Hard/Physical Copy"
-            logging.info("Change Mode = {}".format(change_mode))
+        # Step 9: Enter form details
+        with allure.step("Entering form details"):
+            pom.enter_address_line1(address_line1)
+            pom.enter_address_line2(address_line2)
+            pom.enter_city(city)
+            pom.enter_state(state)
+            pom.enter_country(country)
+            screenshot_manager.add_screenshot(driver, "Form Details")
+            allure.attach(driver.get_screenshot_as_png(), name="Form Details",
+                          attachment_type=allure.attachment_type.PNG)
 
-        # Step 12: Selecting the Delivery Mode
-        with allure.step("Selecting the Delivery Mode"):
-            change_bill.select_delivery_mode(change_mode)
-            screenshot_manager.add_screenshot(driver, "Selecting the Delivery Mode")
-            allure.attach(driver.get_screenshot_as_png(), name="Selecting the Delivery Mode", attachment_type=allure.attachment_type.PNG)
+        with allure.step("Clicking on Create Request Button"):
+            pom.click_create_request()
+            logging.info("Clicking on Create Request Button")
 
-        # Step 13: Clicking on Create Request
-        with allure.step("Clicking on Create Request"):
-            cr.click_on_create_request_button()
-            screenshot_manager.add_screenshot(driver, "After Clicking on Create Request")
-            allure.attach(driver.get_screenshot_as_png(), name="After Clicking on Create Request", attachment_type=allure.attachment_type.PNG)
-            alt_msg = cb.get_alert_dialog_text()
-            if alt_msg.lower().strip() == req_alt_msg.lower().strip():
-                logging.info("Proper Alert as Expected.")
-                cb.click_on_alert_dialog_ok_button_two()
-            else:
-                logging.error("Expected Alert Box content = {}".format(req_alt_msg))
-                cb.click_on_alert_dialog_ok_button_two()
-                raise AssertionError("Expect = [{}] Actual = [{}]".format(req_alt_msg,alt_msg))
-
-            with allure.step("Getting Request ID from Database."):
-                # Step for getting the request id from DB
-                if request_id is None:
-                    logging.info("Collecting the Request ID From DB")
-                    request_id = db.get_request_id_from_db(customer_id)
+            with allure.step("Validating the alert box content"):
+                # Retrieve the actual alert message from the dialog
+                alt_msg = cb.get_alert_dialog_text()
+                # Normalize both the expected and actual messages for comparison
+                if alt_msg.lower().strip() == req_alt_msg.lower().strip():
+                    logging.info("Proper Alert as Expected.")
+                    cb.click_on_alert_dialog_ok_button_two()
                 else:
-                    logging.info("Request ID = {}, already collected ".format(request_id))
-                logging.info("Request_ID = {}".format(request_id))
+                    # Log the expected and actual messages for debugging
+                    logging.error("Expected Alert Box content = [{}]".format(req_alt_msg))
+                    logging.error("Actual Alert Box content = [{}]".format(alt_msg))
+                    # Close the alert dialog
+                    cb.click_on_alert_dialog_ok_button_two()
+                    # Raise an assertion error with detailed information
+                    raise AssertionError("Expected = [{}] but got = [{}]".format(req_alt_msg, alt_msg))
 
-        # Step 14: Navigating to Request Search Page.
-        with allure.step("Navigating to Request Search Page."):
+        with allure.step("Getting Request ID from Database"):
+            request_id = db.get_request_id_from_db(customer_id)
+            logging.info("Request ID = {}".format(request_id))
+            # allure.attach(request_id, name="Request ID", attachment_type=allure.attachment_type.TEXT)
+
+            # Updating the Customer Request After the Request Got Created
+        with allure.step("Click on Customer Request Drop Down"):
             cb.click_on_customer_request_dropdown()
-            screenshot_manager.add_screenshot(driver, "Navigating to Request Search Page.")
-            allure.attach(driver.get_screenshot_as_png(), name="Navigating to Request Search Page.",
+            screenshot_manager.add_screenshot(driver, "Customer Request Drop Down")
+            allure.attach(driver.get_screenshot_as_png(), name="Customer Request Drop Down",
+                              attachment_type=allure.attachment_type.PNG)
+            cb.click_on_request_search_button()
+            cb.click_on_search_filter_button()
+            time.sleep(3)
+            cb.click_on_reset_button()
+            if request_id:
+                logging.info("Searching with REQUEST_ID: {}".format(request_id))
+                cr.enter_request_id(request_id)
+                cb.click_on_search_icon()
+            else:
+                cb.search_by_activity_area(data.get("activity_area"))
+                cb.search_by_acc_name(customer_name)
+                cb.click_on_search_icon()
+            with allure.step("Click on Search Request"):
+                screenshot_manager.add_screenshot(driver, "Search Request")
+                allure.attach(driver.get_screenshot_as_png(), name="Search Request",
+                              attachment_type=allure.attachment_type.PNG)
+            cr.click_update_request_by_customer(customer_name)
+            cr.select_action_check_box()
+            time.sleep(3)
+            cr.click_on_process_now_button()
+            screenshot_manager.add_screenshot(driver,"Clicked on Process")
+            allure.attach(driver.get_screenshot_as_png(), name="Clicked On Process Now Button",
                           attachment_type=allure.attachment_type.PNG)
-        cb.click_on_request_search_button()
-        cb.click_on_search_filter_button()
-        time.sleep(3)
-        cb.click_on_reset_button()
-        if request_id :
-            logging.info("Searching with REQUEST_ID: {}".format(request_id))
-            cr.enter_request_id(request_id)
-            cb.click_on_search_icon()
+            cr.click_on_alert_dialog_ok_button_two()
 
-        with allure.step("Click on Search Request"):
-            screenshot_manager.add_screenshot(driver, "Search Request")
-            allure.attach(driver.get_screenshot_as_png(), name="Search Request",
-                          attachment_type=allure.attachment_type.PNG)
-        cr.click_update_request_by_customer(customer_name)
-        cr.select_action_check_box()
-        logging.info("Clicked on action chain button")
-        time.sleep(3)
-        cr.click_on_process_now_button()
-        logging.info("Clicked on Process Now button")
-        with allure.step("Click on Process Request"):
-            screenshot_manager.add_screenshot(driver, "Process Request")
-            allure.attach(driver.get_screenshot_as_png(), name="Process Request",
-                          attachment_type=allure.attachment_type.PNG)
-        cb.click_on_alert_dialog_ok_button_two()
-        screenshot_manager.add_screenshot(driver, "Successfully Processed")
-        allure.attach(driver.get_screenshot_as_png(), name="Successfully Processed",
-                      attachment_type=allure.attachment_type.PNG)
-        with allure.step("Verify the email Notification"):
-            contact_id = db.get_contact_id_from_customer_contacts_mapping(cust_id=customer_id)[0][
-                "CONTACT_ID"]
-            cust_mail = db.get_email_from_customer_contacts(contact_id)[0]["PRIMARY_EMAIL"]
-            cust_req_id = db.get_customer_request_id(cust_id=customer_id)[0]["REQUEST_ID"]
-            logging.info("Customer mailId :{}\nCustomer Request Id :{}".format(cust_mail, cust_req_id))
-            allure.attach("Customer mailId :{}\nCustomer Request Id :{}".format(cust_mail, cust_req_id),
-                          name="Customer mail id",
-                          attachment_type=allure.attachment_type.TEXT)
-            cb.navigate_to_url(ConfigManager.get_config().get_value('yopmail_url'))
-            cb.wait_for_page_to_load()
-            cb.enter_yopmail_in_textbox(cust_mail)
-            logging.info("Entering the Email ID : {}".format(cust_mail))
-            cb.click_on_inbox_arrow()
-            cb.wait_for_page_to_load(sleep_delay=10)
-            cb.hard_refresh()
-            screenshot_manager.add_screenshot(driver, "Customer Recived mail with Request id")
-            allure.attach(driver.get_screenshot_as_png(),
-                          name="Customer Recived mail with Request id",
-                          attachment_type=allure.attachment_type.PNG)
-            mail.click_on_mails(2)
-            cb.wait_for_page_to_load()
-            screenshot_manager.add_screenshot(driver, "Customer Recived Request Processed mail")
-            allure.attach(driver.get_screenshot_as_png(),
-                          name="Customer Recived mail with Request id",
-                          attachment_type=allure.attachment_type.PNG)
-        logging.info("Successfully Executed the Test Case.")
+
+        logging.info("Successfully Created the Request")
     except TimeoutException as te:
         exc_type, exc_obj, tb = sys.exc_info()
         fname = tb.tb_frame.f_code.co_filename

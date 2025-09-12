@@ -73,6 +73,10 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
                     customer_id = result[0]["Cust_Id"]
         logging.info("CUSTOMER ID TESTING IS = {}".format(customer_id))
 
+        with allure.step("Updating the Test Data "):
+            update = ProcessingDbUtil().update_test_customer_status_in_db(customer_id)
+            logging.info("Updating the test data . [{}]".format(update))
+
         # Pre REQUEST CHECK
         with allure.step("Checking the new billcycle exists in Database."):
             check_bill_cycle = db.check_bill_cycle_exists_in_db_or_not(new_bill_cycle_id)
@@ -84,11 +88,11 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
         with allure.step("Getting Previous Bill Cycle From Database"):
             old_bill_cycle = db.get_bill_cycle(customer_id)
             logging.info("Old bill cycle details = {}".format(old_bill_cycle))
-            allure.attach(old_bill_cycle, name="OLD BILL CYCLE DETAILS", attachment_type=allure.attachment_type.TEXT)
+            # allure.attach(old_bill_cycle, name="OLD BILL CYCLE DETAILS", attachment_type=allure.attachment_type.TEXT)
             old_bill_cycle_id = old_bill_cycle[0]["BILL_CYCLE_ID"]
             if new_bill_cycle_id == old_bill_cycle_id:
-                allure.attach("The old_bill_cycle_id = [{}] and  new_bill_cycle_id [{}] are same.".format(old_bill_cycle_id,new_bill_cycle_id), name="BILLL CYCLES ARE SAME",
-                              attachment_type=allure.attachment_type.TEXT)
+                # allure.attach("The old_bill_cycle_id = [{}] and  new_bill_cycle_id [{}] are same.".format(old_bill_cycle_id,new_bill_cycle_id), name="BILLL CYCLES ARE SAME",
+                #               attachment_type=allure.attachment_type.TEXT)
                 logging.warn("The old_bill_cycle_id = [{}] and  new_bill_cycle_id [{}] are same.".format(old_bill_cycle_id,new_bill_cycle_id))
                 raise AssertionError ("The old_bill_cycle_id = [{}] and  new_bill_cycle_id [{}] are same.".format(old_bill_cycle_id,new_bill_cycle_id))
 
@@ -237,6 +241,7 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
                 assert  "Bill Cycle is Not Changed."
             else:
                 logging.info("Bill Cycle is Updated ")
+
 
 
     except TimeoutException as te:

@@ -59,6 +59,20 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
     request_id = None
     customer_name = None
     try:
+        # Step 3: Prepare test data from Databse If Not Exists in Data File
+        with allure.step("Prepare test data from Databse If Not Exists in Data File"):
+            if customer_id is None:
+                logging.info("Fetching customer ID from database...")
+                result = ProcessingDbUtil().get_customer_id(acc_type="Postpaid")
+                if not result:
+                    raise AssertionError("No customers of accType=Prepaid and status=Available found in DB.")
+                else:
+                    customer_id = result[0]["Cust_Id"]
+        logging.info("CUSTOMER ID TESTING IS = {}".format(customer_id))
+        with allure.step("Updating the Test Data "):
+            update = ProcessingDbUtil().update_test_customer_status_in_db(customer_id)
+            logging.info("Updating the test data . [{}]".format(update))
+
         # Step 1: Wait for login page to load
         with allure.step("Wait for login page to load"):
             rp.wait_for_page_to_load(sleep_delay=3)
@@ -71,17 +85,6 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
             rp.wait_for_page_to_load()
             screenshot_manager.add_screenshot(driver, "CMS Base Page")
             allure.attach(driver.get_screenshot_as_png(), name="CMS Base Page", attachment_type=allure.attachment_type.PNG)
-
-        # Step 3: Prepare test data from Databse If Not Exists in Data File
-        with allure.step("Prepare test data from Databse If Not Exists in Data File"):
-            if customer_id is None:
-                logging.info("Fetching customer ID from database...")
-                result = ProcessingDbUtil().get_customer_id(acc_type="Postpaid")
-                if not result:
-                    raise AssertionError("No customers of accType=Prepaid and status=Available found in DB.")
-                else:
-                    customer_id = result[0]["Cust_Id"]
-        logging.info("CUSTOMER ID TESTING IS = {}".format(customer_id))
 
         # Step 4: Go to Customer Request section
         with allure.step("Navigating to Customer Request Section"):

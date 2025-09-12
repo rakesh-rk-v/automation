@@ -1452,3 +1452,485 @@ Stacktrace:
 2025-09-10 17:23:48,677 - INFO - Failed: 0
 2025-09-10 17:23:48,677 - INFO - Skipped: 0
 2025-09-10 17:23:48,677 - INFO - Terminal summary written.
+
+
+2025-09-11 12:13:08,394 - INFO - Test session is starting.
+2025-09-11 12:13:08,400 - INFO - Session started.
+2025-09-11 12:13:09,392 - INFO - Setting up: test_customer_requests[0]
+2025-09-11 12:13:24,746 - INFO - Running: test_customer_requests[0]
+2025-09-11 12:13:24,752 - INFO - Fetching customer ID from database...
+2025-09-11 12:13:25,247 - INFO - CUSTOMER ID TESTING IS = 3290
+2025-09-11 12:13:25,252 - ERROR - Exception: TypeError: a bytes-like object is required, not 'int' (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_change_billing_addr_test.py, Line: 76)
+2025-09-11 12:13:27,033 - ERROR - Exception in test_customer_requests[0]: a bytes-like object is required, not 'int'
+2025-09-11 12:13:27,034 - INFO - Teardown: test_customer_requests[0]
+2025-09-11 12:13:31,982 - INFO - Session finished with exit status: 1
+2025-09-11 12:13:32,164 - INFO - Total tests run: 1
+2025-09-11 12:13:32,164 - INFO - Passed: 0
+2025-09-11 12:13:32,165 - INFO - Failed: 1
+2025-09-11 12:13:32,165 - INFO - Skipped: 0
+2025-09-11 12:13:32,165 - INFO - Terminal summary written.
+
+
+2025-09-11 12:17:09,082 - INFO - Test session is starting.
+2025-09-11 12:17:09,088 - INFO - Session started.
+2025-09-11 12:17:09,611 - INFO - Setting up: test_customer_requests[0]
+2025-09-11 12:17:15,469 - INFO - Running: test_customer_requests[0]
+2025-09-11 12:17:15,507 - INFO - Fetching customer ID from database...
+2025-09-11 12:17:21,163 - INFO - CUSTOMER ID TESTING IS = 3290
+2025-09-11 12:17:21,167 - ERROR - Exception: TypeError: a bytes-like object is required, not 'dict' (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_change_billing_addr_test.py, Line: 76)
+2025-09-11 12:17:22,628 - ERROR - Exception in test_customer_requests[0]: a bytes-like object is required, not 'dict'
+2025-09-11 12:17:22,629 - INFO - Teardown: test_customer_requests[0]
+2025-09-11 12:17:27,011 - INFO - Session finished with exit status: 1
+2025-09-11 12:17:27,684 - INFO - Total tests run: 1
+2025-09-11 12:17:27,685 - INFO - Passed: 0
+2025-09-11 12:17:27,685 - INFO - Failed: 1
+2025-09-11 12:17:27,685 - INFO - Skipped: 0
+2025-09-11 12:17:27,685 - INFO - Terminal summary written.
+
+
+2025-09-11 12:38:21,920 - INFO - Test session is starting.
+2025-09-11 12:38:21,933 - INFO - Session started.
+2025-09-11 12:38:22,928 - INFO - Setting up: test_customer_requests[0]
+2025-09-11 12:38:54,924 - ERROR - Exception in test_customer_requests[0]: Message: unknown error: net::ERR_CONNECTION_RESET
+  (Session info: chrome=140.0.7339.80)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7a8cffc95+79861]
+	GetHandleVerifier [0x0x7ff7a8cffcf0+79952]
+	(No symbol) [0x0x7ff7a8a7cada]
+	(No symbol) [0x0x7ff7a8a797e1]
+	(No symbol) [0x0x7ff7a8a6a339]
+	(No symbol) [0x0x7ff7a8a6c111]
+	(No symbol) [0x0x7ff7a8a6a656]
+	(No symbol) [0x0x7ff7a8a6a0a7]
+	(No symbol) [0x0x7ff7a8a69d6b]
+	(No symbol) [0x0x7ff7a8a678dc]
+	(No symbol) [0x0x7ff7a8a6816c]
+	(No symbol) [0x0x7ff7a8a80baa]
+	(No symbol) [0x0x7ff7a8b25d6e]
+	(No symbol) [0x0x7ff7a8afcada]
+	(No symbol) [0x0x7ff7a8b24f8b]
+	(No symbol) [0x0x7ff7a8afc8b3]
+	(No symbol) [0x0x7ff7a8ac5272]
+	(No symbol) [0x0x7ff7a8ac6043]
+	GetHandleVerifier [0x0x7ff7a8fbb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7a8fb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7a8fd59d7+3052855]
+	GetHandleVerifier [0x0x7ff7a8d1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7a8d22a1f+222591]
+	GetHandleVerifier [0x0x7ff7a8d08ab4+116244]
+	GetHandleVerifier [0x0x7ff7a8d08c69+116681]
+	GetHandleVerifier [0x0x7ff7a8cef048+11176]
+	BaseThreadInitThunk [0x0x7ff86da5e8d7+23]
+	RtlUserThreadStart [0x0x7ff86f1e8d9c+44]
+
+2025-09-11 12:38:54,929 - INFO - Teardown: test_customer_requests[0]
+2025-09-11 12:38:54,982 - INFO - Session finished with exit status: 1
+2025-09-11 12:38:55,077 - INFO - Total tests run: 1
+2025-09-11 12:38:55,077 - INFO - Passed: 0
+2025-09-11 12:38:55,077 - INFO - Failed: 0
+2025-09-11 12:38:55,078 - INFO - Skipped: 0
+2025-09-11 12:38:55,078 - INFO - Terminal summary written.
+
+
+2025-09-11 13:44:52,480 - INFO - Test session is starting.
+2025-09-11 13:44:52,486 - INFO - Session started.
+2025-09-11 13:44:53,001 - INFO - Setting up: test_customer_requests[0]
+2025-09-11 13:44:59,097 - INFO - Running: test_customer_requests[0]
+2025-09-11 13:44:59,122 - INFO - Fetching customer ID from database...
+2025-09-11 13:44:59,744 - INFO - CUSTOMER ID TESTING IS = 3290
+2025-09-11 13:44:59,745 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-11 13:44:59,746 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-11 13:44:59,929 - INFO - Customer = [3290] is Having a Valid Postpaid Account.
+2025-09-11 13:46:29,638 - ERROR - Exception: ElementClickInterceptedException: Message: element click intercepted: Element <button _ngcontent-hfo-c159="" mat-menu-item="" class="mat-focus-indicator mat-menu-item ng-tns-c132-6 ng-star-inserted" tabindex="0" role="menuitem" aria-disabled="false" style="">...</button> is not clickable at point (463, 116). Other element would receive the click: <div id="cdk-overlay-0" class="cdk-overlay-pane" style="position: static;">...</div>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff77ae1fc95+79861]
+	GetHandleVerifier [0x0x7ff77ae1fcf0+79952]
+	(No symbol) [0x0x7ff77ab9cada]
+	(No symbol) [0x0x7ff77abfc5d9]
+	(No symbol) [0x0x7ff77abf9f5e]
+	(No symbol) [0x0x7ff77abf6eb1]
+	(No symbol) [0x0x7ff77abf5da0]
+	(No symbol) [0x0x7ff77abe7338]
+	(No symbol) [0x0x7ff77ac1cada]
+	(No symbol) [0x0x7ff77abe6bc6]
+	(No symbol) [0x0x7ff77ac1ccf0]
+	(No symbol) [0x0x7ff77ac44f8b]
+	(No symbol) [0x0x7ff77ac1c8b3]
+	(No symbol) [0x0x7ff77abe5272]
+	(No symbol) [0x0x7ff77abe6043]
+	GetHandleVerifier [0x0x7ff77b0db9cd+2946349]
+	GetHandleVerifier [0x0x7ff77b0d5c4a+2922410]
+	GetHandleVerifier [0x0x7ff77b0f59d7+3052855]
+	GetHandleVerifier [0x0x7ff77ae3aa7e+189918]
+	GetHandleVerifier [0x0x7ff77ae42a1f+222591]
+	GetHandleVerifier [0x0x7ff77ae28ab4+116244]
+	GetHandleVerifier [0x0x7ff77ae28c69+116681]
+	GetHandleVerifier [0x0x7ff77ae0f048+11176]
+	BaseThreadInitThunk [0x0x7ff86da5e8d7+23]
+	RtlUserThreadStart [0x0x7ff86f1e8d9c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_change_billing_addr_test.py, Line: 108)
+2025-09-11 13:46:36,317 - ERROR - Exception in test_customer_requests[0]: Message: element click intercepted: Element <button _ngcontent-hfo-c159="" mat-menu-item="" class="mat-focus-indicator mat-menu-item ng-tns-c132-6 ng-star-inserted" tabindex="0" role="menuitem" aria-disabled="false" style="">...</button> is not clickable at point (463, 116). Other element would receive the click: <div id="cdk-overlay-0" class="cdk-overlay-pane" style="position: static;">...</div>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff77ae1fc95+79861]
+	GetHandleVerifier [0x0x7ff77ae1fcf0+79952]
+	(No symbol) [0x0x7ff77ab9cada]
+	(No symbol) [0x0x7ff77abfc5d9]
+	(No symbol) [0x0x7ff77abf9f5e]
+	(No symbol) [0x0x7ff77abf6eb1]
+	(No symbol) [0x0x7ff77abf5da0]
+	(No symbol) [0x0x7ff77abe7338]
+	(No symbol) [0x0x7ff77ac1cada]
+	(No symbol) [0x0x7ff77abe6bc6]
+	(No symbol) [0x0x7ff77ac1ccf0]
+	(No symbol) [0x0x7ff77ac44f8b]
+	(No symbol) [0x0x7ff77ac1c8b3]
+	(No symbol) [0x0x7ff77abe5272]
+	(No symbol) [0x0x7ff77abe6043]
+	GetHandleVerifier [0x0x7ff77b0db9cd+2946349]
+	GetHandleVerifier [0x0x7ff77b0d5c4a+2922410]
+	GetHandleVerifier [0x0x7ff77b0f59d7+3052855]
+	GetHandleVerifier [0x0x7ff77ae3aa7e+189918]
+	GetHandleVerifier [0x0x7ff77ae42a1f+222591]
+	GetHandleVerifier [0x0x7ff77ae28ab4+116244]
+	GetHandleVerifier [0x0x7ff77ae28c69+116681]
+	GetHandleVerifier [0x0x7ff77ae0f048+11176]
+	BaseThreadInitThunk [0x0x7ff86da5e8d7+23]
+	RtlUserThreadStart [0x0x7ff86f1e8d9c+44]
+
+2025-09-11 13:46:36,324 - INFO - Teardown: test_customer_requests[0]
+2025-09-11 13:46:43,577 - INFO - Session finished with exit status: 1
+2025-09-11 13:46:43,907 - INFO - Total tests run: 1
+2025-09-11 13:46:43,907 - INFO - Passed: 0
+2025-09-11 13:46:43,908 - INFO - Failed: 1
+2025-09-11 13:46:43,917 - INFO - Skipped: 0
+2025-09-11 13:46:43,918 - INFO - Terminal summary written.
+
+
+2025-09-11 13:52:41,357 - INFO - Test session is starting.
+2025-09-11 13:52:41,362 - INFO - Session started.
+2025-09-11 13:52:42,420 - INFO - Setting up: test_customer_requests[0]
+2025-09-11 13:53:01,315 - INFO - Running: test_customer_requests[0]
+2025-09-11 13:53:01,355 - INFO - Fetching customer ID from database...
+2025-09-11 13:53:02,078 - INFO - CUSTOMER ID TESTING IS = 3290
+2025-09-11 13:53:02,079 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-11 13:53:02,080 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-11 13:53:02,732 - INFO - Customer = [3290] is Having a Valid Postpaid Account.
+2025-09-11 13:53:21,542 - INFO - Clicked on CMS Module.
+2025-09-11 13:53:29,503 - INFO - Clicked on Customer Request Section.
+2025-09-11 13:53:30,140 - INFO - Search By: Customer ID
+2025-09-11 13:53:35,691 - INFO - Clicked on Search icon.
+2025-09-11 13:53:40,833 - INFO - Customer Details Found
+2025-09-11 13:53:41,130 - INFO - Customer Name: ChristineMccormick JohnYoung TylerLawson
+2025-09-11 13:53:43,330 - INFO - Request Type Service Requests
+2025-09-11 13:53:46,104 - INFO - Request Name: Change Billcycle
+2025-09-11 13:53:55,492 - INFO - Checking the account Radio Button.
+2025-09-11 13:53:55,719 - INFO - Clicked on Account Radio Button
+2025-09-11 13:54:10,406 - ERROR - TimeoutException: Message: xpath (//button[text()='Yes'])[2] explicit wait failed None
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79878fc95+79861]
+	GetHandleVerifier [0x0x7ff79878fcf0+79952]
+	(No symbol) [0x0x7ff79850cada]
+	(No symbol) [0x0x7ff798564457]
+	(No symbol) [0x0x7ff79856471c]
+	(No symbol) [0x0x7ff7985b8217]
+	(No symbol) [0x0x7ff79858cb1f]
+	(No symbol) [0x0x7ff7985b4f8b]
+	(No symbol) [0x0x7ff79858c8b3]
+	(No symbol) [0x0x7ff798555272]
+	(No symbol) [0x0x7ff798556043]
+	GetHandleVerifier [0x0x7ff798a4b9cd+2946349]
+	GetHandleVerifier [0x0x7ff798a45c4a+2922410]
+	GetHandleVerifier [0x0x7ff798a659d7+3052855]
+	GetHandleVerifier [0x0x7ff7987aaa7e+189918]
+	GetHandleVerifier [0x0x7ff7987b2a1f+222591]
+	GetHandleVerifier [0x0x7ff798798ab4+116244]
+	GetHandleVerifier [0x0x7ff798798c69+116681]
+	GetHandleVerifier [0x0x7ff79877f048+11176]
+	BaseThreadInitThunk [0x0x7ff86da5e8d7+23]
+	RtlUserThreadStart [0x0x7ff86f1e8d9c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_change_billing_addr_test.py, Line: 175)
+2025-09-11 13:54:11,534 - ERROR - Exception in test_customer_requests[0]: Message: xpath (//button[text()='Yes'])[2] explicit wait failed None
+Stacktrace:
+	GetHandleVerifier [0x0x7ff79878fc95+79861]
+	GetHandleVerifier [0x0x7ff79878fcf0+79952]
+	(No symbol) [0x0x7ff79850cada]
+	(No symbol) [0x0x7ff798564457]
+	(No symbol) [0x0x7ff79856471c]
+	(No symbol) [0x0x7ff7985b8217]
+	(No symbol) [0x0x7ff79858cb1f]
+	(No symbol) [0x0x7ff7985b4f8b]
+	(No symbol) [0x0x7ff79858c8b3]
+	(No symbol) [0x0x7ff798555272]
+	(No symbol) [0x0x7ff798556043]
+	GetHandleVerifier [0x0x7ff798a4b9cd+2946349]
+	GetHandleVerifier [0x0x7ff798a45c4a+2922410]
+	GetHandleVerifier [0x0x7ff798a659d7+3052855]
+	GetHandleVerifier [0x0x7ff7987aaa7e+189918]
+	GetHandleVerifier [0x0x7ff7987b2a1f+222591]
+	GetHandleVerifier [0x0x7ff798798ab4+116244]
+	GetHandleVerifier [0x0x7ff798798c69+116681]
+	GetHandleVerifier [0x0x7ff79877f048+11176]
+	BaseThreadInitThunk [0x0x7ff86da5e8d7+23]
+	RtlUserThreadStart [0x0x7ff86f1e8d9c+44]
+
+2025-09-11 13:54:11,540 - INFO - Teardown: test_customer_requests[0]
+2025-09-11 13:55:13,046 - INFO - Session finished with exit status: 1
+2025-09-11 13:55:13,512 - INFO - Total tests run: 1
+2025-09-11 13:55:13,513 - INFO - Passed: 0
+2025-09-11 13:55:13,513 - INFO - Failed: 1
+2025-09-11 13:55:13,513 - INFO - Skipped: 0
+2025-09-11 13:55:13,513 - INFO - Terminal summary written.
+
+
+2025-09-11 13:56:02,066 - INFO - Test session is starting.
+2025-09-11 13:56:02,072 - INFO - Session started.
+2025-09-11 13:56:02,714 - INFO - Setting up: test_customer_requests[0]
+2025-09-11 13:56:17,851 - INFO - Running: test_customer_requests[0]
+2025-09-11 13:56:17,901 - INFO - Fetching customer ID from database...
+2025-09-11 13:56:18,731 - INFO - CUSTOMER ID TESTING IS = 3290
+2025-09-11 13:56:18,738 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-11 13:56:18,740 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-11 13:56:19,797 - INFO - Customer = [3290] is Having a Valid Postpaid Account.
+2025-09-11 13:56:45,972 - INFO - Clicked on CMS Module.
+2025-09-11 13:56:55,048 - INFO - Clicked on Customer Request Section.
+2025-09-11 13:56:55,556 - INFO - Search By: Customer ID
+2025-09-11 13:57:02,322 - INFO - Clicked on Search icon.
+2025-09-11 13:57:07,386 - INFO - Customer Details Found
+2025-09-11 13:57:07,800 - INFO - Customer Name: ChristineMccormick JohnYoung TylerLawson
+2025-09-11 13:57:10,023 - INFO - Request Type Service Requests
+2025-09-11 13:57:12,805 - INFO - Request Name: Change Billing Address
+2025-09-11 13:57:21,810 - INFO - Checking the account Radio Button.
+2025-09-11 13:57:21,964 - INFO - Clicked on Account Radio Button
+2025-09-11 13:57:28,195 - INFO - Clicking on Create Request Button
+2025-09-11 13:57:28,370 - INFO - Proper Alert as Expected.
+2025-09-11 13:57:29,860 - INFO - Request ID = 1006
+2025-09-11 13:57:29,939 - ERROR - Exception: TypeError: a bytes-like object is required, not 'int' (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\create_request_change_billing_addr_test.py, Line: 214)
+2025-09-11 13:57:30,906 - ERROR - Exception in test_customer_requests[0]: a bytes-like object is required, not 'int'
+2025-09-11 13:57:30,907 - INFO - Teardown: test_customer_requests[0]
+2025-09-11 13:58:13,717 - INFO - Session finished with exit status: 1
+2025-09-11 13:58:14,124 - INFO - Total tests run: 1
+2025-09-11 13:58:14,125 - INFO - Passed: 0
+2025-09-11 13:58:14,125 - INFO - Failed: 1
+2025-09-11 13:58:14,125 - INFO - Skipped: 0
+2025-09-11 13:58:14,126 - INFO - Terminal summary written.
+
+
+2025-09-11 14:11:38,311 - INFO - Test session is starting.
+2025-09-11 14:11:38,656 - INFO - Session started.
+2025-09-11 14:11:55,482 - INFO - Setting up: test_customer_requests[0]
+2025-09-11 14:12:26,536 - INFO - Running: test_customer_requests[0]
+2025-09-11 14:12:26,597 - INFO - Fetching customer ID from database...
+2025-09-11 14:12:27,082 - INFO - CUSTOMER ID TESTING IS = 3290
+2025-09-11 14:12:27,082 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-11 14:12:27,083 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-11 14:12:27,317 - INFO - Customer = [3290] is Having a Valid Postpaid Account.
+2025-09-11 14:12:47,218 - INFO - Clicked on CMS Module.
+2025-09-11 14:12:52,877 - INFO - Clicked on Customer Request Section.
+2025-09-11 14:12:53,001 - INFO - Search By: Customer ID
+2025-09-11 14:12:58,139 - INFO - Clicked on Search icon.
+2025-09-11 14:13:04,148 - INFO - Customer Details Found
+2025-09-11 14:13:05,478 - INFO - Customer Name: ChristineMccormick JohnYoung TylerLawson
+2025-09-11 14:13:08,160 - INFO - Request Type Service Requests
+2025-09-11 14:13:10,946 - INFO - Request Name: Change Billing Address
+2025-09-11 14:13:19,978 - INFO - Checking the account Radio Button.
+2025-09-11 14:13:20,172 - INFO - Clicked on Account Radio Button
+2025-09-11 14:13:26,375 - INFO - Clicking on Create Request Button
+2025-09-11 14:13:26,549 - INFO - Proper Alert as Expected.
+2025-09-11 14:13:26,897 - INFO - Request ID = 1007
+2025-09-11 14:13:31,040 - INFO - Searching with REQUEST_ID: 1007
+2025-09-11 14:13:31,041 - INFO - Entering the Request ID = {} , in Request Search Page.
+2025-09-11 14:14:04,878 - INFO - Teardown: test_customer_requests[0]
+2025-09-11 14:14:50,400 - INFO - Session finished with exit status: 0
+2025-09-11 14:14:50,643 - INFO - Total tests run: 1
+2025-09-11 14:14:50,998 - INFO - Passed: 1
+2025-09-11 14:14:51,011 - INFO - Failed: 0
+2025-09-11 14:14:51,015 - INFO - Skipped: 0
+2025-09-11 14:14:51,016 - INFO - Terminal summary written.
+
+
+2025-09-11 15:09:10,417 - INFO - Test session is starting.
+2025-09-11 15:09:10,423 - INFO - Session started.
+2025-09-11 15:09:11,516 - INFO - Setting up: test_customer_requests[0]
+2025-09-11 15:09:35,696 - INFO - Running: test_customer_requests[0]
+2025-09-11 15:09:35,709 - INFO - Fetching customer ID from database...
+2025-09-11 15:09:36,602 - INFO - CUSTOMER ID TESTING IS = 3290
+2025-09-11 15:09:36,603 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-11 15:09:36,604 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-11 15:09:36,933 - INFO - Customer = [3290] is Having a Valid Postpaid Account.
+2025-09-11 15:10:15,292 - INFO - Clicked on CMS Module.
+2025-09-11 15:10:27,812 - ERROR - Exception: ElementClickInterceptedException: Message: element click intercepted: Element <button _ngcontent-eji-c159="" mat-menu-item="" class="mat-focus-indicator mat-menu-item ng-tns-c132-6 ng-star-inserted" tabindex="0" role="menuitem" aria-disabled="false" style="">...</button> is not clickable at point (461, 115). Other element would receive the click: <div id="cdk-overlay-0" class="cdk-overlay-pane" style="position: static;">...</div>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7aeadfc95+79861]
+	GetHandleVerifier [0x0x7ff7aeadfcf0+79952]
+	(No symbol) [0x0x7ff7ae85cada]
+	(No symbol) [0x0x7ff7ae8bc5d9]
+	(No symbol) [0x0x7ff7ae8b9f5e]
+	(No symbol) [0x0x7ff7ae8b6eb1]
+	(No symbol) [0x0x7ff7ae8b5da0]
+	(No symbol) [0x0x7ff7ae8a7338]
+	(No symbol) [0x0x7ff7ae8dcada]
+	(No symbol) [0x0x7ff7ae8a6bc6]
+	(No symbol) [0x0x7ff7ae8dccf0]
+	(No symbol) [0x0x7ff7ae904f8b]
+	(No symbol) [0x0x7ff7ae8dc8b3]
+	(No symbol) [0x0x7ff7ae8a5272]
+	(No symbol) [0x0x7ff7ae8a6043]
+	GetHandleVerifier [0x0x7ff7aed9b9cd+2946349]
+	GetHandleVerifier [0x0x7ff7aed95c4a+2922410]
+	GetHandleVerifier [0x0x7ff7aedb59d7+3052855]
+	GetHandleVerifier [0x0x7ff7aeafaa7e+189918]
+	GetHandleVerifier [0x0x7ff7aeb02a1f+222591]
+	GetHandleVerifier [0x0x7ff7aeae8ab4+116244]
+	GetHandleVerifier [0x0x7ff7aeae8c69+116681]
+	GetHandleVerifier [0x0x7ff7aeacf048+11176]
+	BaseThreadInitThunk [0x0x7ff86da5e8d7+23]
+	RtlUserThreadStart [0x0x7ff86f1e8d9c+44]
+ (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\verify_billing_address_change_for_customer_test.py, Line: 109)
+2025-09-11 15:10:28,996 - ERROR - Exception in test_customer_requests[0]: Message: element click intercepted: Element <button _ngcontent-eji-c159="" mat-menu-item="" class="mat-focus-indicator mat-menu-item ng-tns-c132-6 ng-star-inserted" tabindex="0" role="menuitem" aria-disabled="false" style="">...</button> is not clickable at point (461, 115). Other element would receive the click: <div id="cdk-overlay-0" class="cdk-overlay-pane" style="position: static;">...</div>
+  (Session info: chrome=140.0.7339.80); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7aeadfc95+79861]
+	GetHandleVerifier [0x0x7ff7aeadfcf0+79952]
+	(No symbol) [0x0x7ff7ae85cada]
+	(No symbol) [0x0x7ff7ae8bc5d9]
+	(No symbol) [0x0x7ff7ae8b9f5e]
+	(No symbol) [0x0x7ff7ae8b6eb1]
+	(No symbol) [0x0x7ff7ae8b5da0]
+	(No symbol) [0x0x7ff7ae8a7338]
+	(No symbol) [0x0x7ff7ae8dcada]
+	(No symbol) [0x0x7ff7ae8a6bc6]
+	(No symbol) [0x0x7ff7ae8dccf0]
+	(No symbol) [0x0x7ff7ae904f8b]
+	(No symbol) [0x0x7ff7ae8dc8b3]
+	(No symbol) [0x0x7ff7ae8a5272]
+	(No symbol) [0x0x7ff7ae8a6043]
+	GetHandleVerifier [0x0x7ff7aed9b9cd+2946349]
+	GetHandleVerifier [0x0x7ff7aed95c4a+2922410]
+	GetHandleVerifier [0x0x7ff7aedb59d7+3052855]
+	GetHandleVerifier [0x0x7ff7aeafaa7e+189918]
+	GetHandleVerifier [0x0x7ff7aeb02a1f+222591]
+	GetHandleVerifier [0x0x7ff7aeae8ab4+116244]
+	GetHandleVerifier [0x0x7ff7aeae8c69+116681]
+	GetHandleVerifier [0x0x7ff7aeacf048+11176]
+	BaseThreadInitThunk [0x0x7ff86da5e8d7+23]
+	RtlUserThreadStart [0x0x7ff86f1e8d9c+44]
+
+2025-09-11 15:10:29,002 - INFO - Teardown: test_customer_requests[0]
+2025-09-11 15:10:39,096 - INFO - Session finished with exit status: 1
+2025-09-11 15:10:39,260 - INFO - Total tests run: 1
+2025-09-11 15:10:39,261 - INFO - Passed: 0
+2025-09-11 15:10:39,261 - INFO - Failed: 1
+2025-09-11 15:10:39,261 - INFO - Skipped: 0
+2025-09-11 15:10:39,262 - INFO - Terminal summary written.
+
+
+2025-09-11 15:19:37,603 - INFO - Test session is starting.
+2025-09-11 15:19:37,608 - INFO - Session started.
+2025-09-11 15:19:38,225 - INFO - Setting up: test_customer_requests[0]
+2025-09-11 15:19:59,367 - INFO - Running: test_customer_requests[0]
+2025-09-11 15:19:59,406 - INFO - Fetching customer ID from database...
+2025-09-11 15:20:00,555 - INFO - CUSTOMER ID TESTING IS = 3290
+2025-09-11 15:20:00,555 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-11 15:20:00,556 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-11 15:20:00,734 - INFO - Customer = [3290] is Having a Valid Postpaid Account.
+2025-09-11 15:20:41,832 - INFO - Clicked on CMS Module.
+2025-09-11 15:20:55,459 - INFO - Clicked on Customer Request Section.
+2025-09-11 15:20:55,661 - INFO - Search By: Customer ID
+2025-09-11 15:21:02,702 - INFO - Clicked on Search icon.
+2025-09-11 15:21:11,878 - INFO - Customer Details Found
+2025-09-11 15:21:12,867 - INFO - Customer Name: ChristineMccormick JohnYoung TylerLawson
+2025-09-11 15:21:15,466 - INFO - Request Type Service Requests
+2025-09-11 15:21:18,676 - INFO - Request Name: Change Billing Address
+2025-09-11 15:21:27,530 - INFO - Checking the account Radio Button.
+2025-09-11 15:21:27,710 - INFO - Clicked on Account Radio Button
+2025-09-11 15:21:39,620 - INFO - Clicking on Create Request Button
+2025-09-11 15:21:39,845 - INFO - Proper Alert as Expected.
+2025-09-11 15:21:40,528 - INFO - Request ID = 1010
+2025-09-11 15:21:52,458 - INFO - Searching with REQUEST_ID: 1010
+2025-09-11 15:21:52,458 - INFO - Entering the Request ID = {} , in Request Search Page.
+2025-09-11 15:22:02,391 - ERROR - Exception: TypeError: ScreenshotManager.add_screenshot() missing 1 required positional argument: 'description' (File: D:\RaptrDXP\Selenium\CRM_REQUESTS\Tests\CMS\verify_billing_address_change_for_customer_test.py, Line: 243)
+2025-09-11 15:22:18,864 - ERROR - Exception in test_customer_requests[0]: ScreenshotManager.add_screenshot() missing 1 required positional argument: 'description'
+2025-09-11 15:22:18,866 - INFO - Teardown: test_customer_requests[0]
+2025-09-11 15:22:22,282 - INFO - Session finished with exit status: 1
+2025-09-11 15:22:22,860 - INFO - Total tests run: 1
+2025-09-11 15:22:22,861 - INFO - Passed: 0
+2025-09-11 15:22:22,861 - INFO - Failed: 1
+2025-09-11 15:22:22,862 - INFO - Skipped: 0
+2025-09-11 15:22:22,862 - INFO - Terminal summary written.
+
+
+2025-09-11 15:23:30,022 - INFO - Test session is starting.
+2025-09-11 15:23:30,032 - INFO - Session started.
+2025-09-11 15:23:31,387 - INFO - Setting up: test_customer_requests[0]
+2025-09-11 15:24:02,281 - INFO - Running: test_customer_requests[0]
+2025-09-11 15:24:02,387 - INFO - Fetching customer ID from database...
+2025-09-11 15:24:02,910 - INFO - CUSTOMER ID TESTING IS = 3290
+2025-09-11 15:24:02,912 - INFO - Checking the Customer is Having a Active Postpaid Account
+2025-09-11 15:24:02,913 - INFO - Checking Customer Having a Postpaid Account or Not in Database.
+2025-09-11 15:24:09,917 - INFO - Customer = [3290] is Having a Valid Postpaid Account.
+2025-09-11 15:24:27,588 - INFO - Clicked on CMS Module.
+2025-09-11 15:24:36,725 - INFO - Clicked on Customer Request Section.
+2025-09-11 15:24:36,857 - INFO - Search By: Customer ID
+2025-09-11 15:24:45,501 - INFO - Clicked on Search icon.
+2025-09-11 15:24:50,576 - INFO - Customer Details Found
+2025-09-11 15:24:50,931 - INFO - Customer Name: ChristineMccormick JohnYoung TylerLawson
+2025-09-11 15:24:53,186 - INFO - Request Type Service Requests
+2025-09-11 15:24:56,061 - INFO - Request Name: Change Billing Address
+2025-09-11 15:25:30,872 - INFO - Checking the account Radio Button.
+2025-09-11 15:25:31,081 - INFO - Clicked on Account Radio Button
+2025-09-11 15:25:37,390 - INFO - Clicking on Create Request Button
+2025-09-11 15:25:37,521 - INFO - Proper Alert as Expected.
+2025-09-11 15:25:38,030 - INFO - Request ID = 1011
+2025-09-11 15:25:42,540 - INFO - Searching with REQUEST_ID: 1011
+2025-09-11 15:25:42,543 - INFO - Entering the Request ID = {} , in Request Search Page.
+2025-09-11 15:25:47,970 - INFO - Updating the test data . [None]
+2025-09-11 15:25:47,971 - INFO - Verify Contract Details In the Customer 360 View
+2025-09-11 15:25:56,870 - INFO - Clicking on Customer 360 Button.
+2025-09-11 15:26:03,903 - INFO - Teardown: test_customer_requests[0]
+2025-09-11 15:26:11,241 - INFO - Session finished with exit status: 0
+2025-09-11 15:26:11,795 - INFO - Total tests run: 1
+2025-09-11 15:26:11,798 - INFO - Passed: 1
+2025-09-11 15:26:11,800 - INFO - Failed: 0
+2025-09-11 15:26:11,816 - INFO - Skipped: 0
+2025-09-11 15:26:11,821 - INFO - Terminal summary written.
+
+
+2025-09-12 11:57:05,181 - INFO - Test session is starting.
+2025-09-12 11:57:05,186 - INFO - Session started.
+2025-09-12 11:57:06,041 - INFO - Setting up: test_customer_requests[0]
+2025-09-12 11:57:24,179 - INFO - Running: test_customer_requests[0]
+2025-09-12 11:57:24,189 - INFO - Fetching customer ID from database...
+2025-09-12 11:57:25,042 - INFO - CUSTOMER ID TESTING IS = 3348
+2025-09-12 11:57:25,067 - INFO - Updating the test data . [None]
+2025-09-12 11:57:52,172 - INFO - Search By: Customer ID
+2025-09-12 11:58:03,944 - INFO - Clicked on Search icon.
+2025-09-12 11:58:09,033 - INFO - Customer Details Found
+2025-09-12 11:58:09,309 - INFO - Customer Name: ElizabethVasquez TerryAshley TaylorHale
+2025-09-12 11:58:11,540 - INFO - Request Type Service Requests
+2025-09-12 11:58:17,624 - INFO - Request Name: Change Bill Delivery Mode
+2025-09-12 11:58:29,454 - INFO - Selecting the Billing Account
+2025-09-12 11:58:32,814 - INFO - Clicked on the Billing Account ID
+2025-09-12 11:58:33,151 - INFO - Getting the Customer Billing Account From DB
+2025-09-12 11:58:33,570 - INFO - Got Bill Delivery Mode From DB. [{'DELIVERY_MODE': 1}]
+2025-09-12 11:58:33,571 - INFO - Change Mode = Soft Copy
+2025-09-12 11:58:35,393 - INFO - Proper Alert as Expected.
+2025-09-12 11:58:35,672 - INFO - Collecting the Request ID From DB
+2025-09-12 11:58:35,704 - INFO - Request_ID = 1053
+2025-09-12 11:58:39,725 - INFO - Searching with REQUEST_ID: 1053
+2025-09-12 11:58:39,727 - INFO - Entering the Request ID = {} , in Request Search Page.
+2025-09-12 11:58:40,809 - INFO - Clicked on action chain button
+2025-09-12 11:58:47,729 - INFO - Clicked on Process Now button
+2025-09-12 11:58:48,678 - INFO - Got Bill Delivery Mode From DB. [{'DELIVERY_MODE': 2}]
+2025-09-12 11:58:48,679 - INFO - Bill Delivery Mode is Updated 
+2025-09-12 11:58:48,679 - INFO - Previous Delivery Mode: Soft Copy
+2025-09-12 11:58:48,679 - INFO - Updated Delivery Mode: Hard/Physical Copy
+2025-09-12 11:58:48,849 - INFO - Teardown: test_customer_requests[0]
+2025-09-12 11:58:55,007 - INFO - Session finished with exit status: 0
+2025-09-12 11:58:55,217 - INFO - Total tests run: 1
+2025-09-12 11:58:55,219 - INFO - Passed: 1
+2025-09-12 11:58:55,219 - INFO - Failed: 0
+2025-09-12 11:58:55,220 - INFO - Skipped: 0
+2025-09-12 11:58:55,221 - INFO - Terminal summary written.

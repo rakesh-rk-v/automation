@@ -17,7 +17,7 @@ class ProcessingDbUtil(SqlUtil):
                  and Account_type='{}'""".format(acc_type)
         result=self.execute_select_query(query)
         return result
-    def update_tets_customer_status_in_db(self,cust_id):
+    def update_test_customer_status_in_db(self, cust_id):
         query = """update sit.dbo.Customer_Details set status ='Used' where cust_id = {} """.format(cust_id)
         result = self.execute_update_query(query)
         return result

@@ -65,11 +65,14 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
                 logging.info("Fetching customer ID from database...")
                 result = ProcessingDbUtil().get_customer_id(acc_type="Postpaid")
                 if not result:
-                    raise AssertionError("No customers of accType=Prepaid and status=Available found in DB.")
+                    raise AssertionError("No customers of accType=Postpaid and status=Available found in DB.")
                 else:
                     customer_id = result[0]["Cust_Id"]
         logging.info("CUSTOMER ID TESTING IS = {}".format(customer_id))
-
+        # allure.attach(customer_id, name="TEST Customer ID", attachment_type=allure.attachment_type.TEXT)
+        with allure.step("Updating the Test Data "):
+            update = ProcessingDbUtil().update_test_customer_status_in_db(customer_id)
+            logging.info("Updating the test data . [{}]".format(update))
         #Step: TEST DATA Mandatory Check
         with allure.step("Checking the Mandatory Test Data"):
             if plan is not None:
@@ -183,10 +186,6 @@ def test_customer_requests(driver, screenshot_manager, _data_index):
             cr.click_on_alert_dialog_ok_button_two()
             screenshot_manager.add_screenshot(driver, "Click on Create Request")
             allure.attach(driver.get_screenshot_as_png(), name="Click on Create Request", attachment_type=allure.attachment_type.PNG)
-        with allure.step("Updating the test data"):
-            logging.info("Updating the Test Data of Customer ID : {}".format(customer_id))
-            res= ProcessingDbUtil().update_customer_as_prepaid_in_testdb(cust_id=customer_id)
-            logging.info("Response = {}".format(res))
 
         # Verify Contract Details In the Customer 360 View
         with allure.step("Verify Contract Details In the Customer 360 View"):

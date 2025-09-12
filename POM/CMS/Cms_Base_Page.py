@@ -186,3 +186,4 @@ class CmsBasePage(RpBasePage):
     def click_on_reset_button(self):
         self.__reset_button().click()
 
+
